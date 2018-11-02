@@ -1,0 +1,6 @@
+By first guessing half the maximum number you can tell if the true number is higher or lower. 
+If it is higher, then you add half of the half (a quarter) of the maximum number to the middle
+number. If it is is lower, you do the opposite and subtract a quarter from the middle number.
+From here you would go add or subtract a portion(i.e 50 if 1000 is max. number) depending if 
+it was higher or lower.Now you add or subtract smaller numbers (like 5 down to 1) until you get
+the true number.
