@@ -1,0 +1,30 @@
+using System;
+					
+public class Program
+{
+	public static void Main(string[] args)
+	{
+		int key;
+		while(true)
+		{
+			Console.WriteLine("Enter the integer value for the action you want to preform:");
+			Console.WriteLine("1. Add 2 and 3");
+			Console.WriteLine("2. Subtract 2 from 3");
+			Console.WriteLine("3. Multiply 2 by 3");
+			Console.WriteLine("4. Exit the program");
+			key = int.Parse(Console.ReadLine());
+			{
+				if (key == 1)
+					Console.WriteLine("2 + 3 = 5");
+				else if(key == 2)
+					Console.WriteLine("3 - 2 = 1");
+				else if (key == 3)
+					Console.WriteLine("2 x 3 = 6");
+				else 
+					Console.WriteLine("Goodbye");
+					break;
+			}
+			
+		}
+	}
+}

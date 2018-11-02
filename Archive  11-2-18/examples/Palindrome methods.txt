@@ -1,0 +1,6 @@
+Storing the string backwards and comparing the two is more efficent and less 
+complex. Because it only needs 3 simple lines to create and compare the 
+strings, this method is much less complex and marginally faster. 
+
+The other method where you compare both ends is more complex, but it has the
+ability to find palindromes within the string

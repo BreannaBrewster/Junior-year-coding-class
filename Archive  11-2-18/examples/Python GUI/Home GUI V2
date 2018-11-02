@@ -1,0 +1,35 @@
+from tkinter import *
+import tkinter.font
+
+win = Tk()
+win.title("Spinbox")
+
+leftFrame = Frame(win)
+leftFrame.pack(side = LEFT)
+rightFrame = Frame(win)
+rightFrame.pack(side = RIGHT)
+midFrame = Frame(win)
+midFrame.pack(side = RIGHT)
+
+def buttonPress():
+    print('Slider value is {}' .format(sliderval.get()))
+
+myButton = Button (midFrame, text = 'Load', font = 'Helvetica', command=buttonPress, bg='bisque2', height=1)
+myButton.pack(side = BOTTOM)
+
+check1 = Checkbutton(leftFrame, text='Lights', variable=checkVal1, command=checkToggle)
+check1.pack()
+check2 = Checkbutton(leftFrame, text='Sprinkler', variable=checkVal2, command=checkToggle)
+check2.pack()
+check3 = Checkbutton(leftFrame, text='Music', variable=checkVal2, command=checkToggle)
+check3.pack()
+
+#closes GUI#
+def close():
+    win.destroy
+
+#exit button - closes GUI#
+exitButton = Button(rightFrame, text='Exit', font=myFont, command=close, bg='red', height=1, width=6)
+exitButton.pack(side = BOTTOM)
+
+win.mainloop()

@@ -1,0 +1,11 @@
+from tkinter import *
+win = Tk()
+win.title("Spinbox")
+
+rightFrame = Frame(win)
+rightFrame.pack(side = RIGHT)
+
+numOption = Spinbox(rightFrame, from_1, to = 80, width=5)
+numOption.pack(side = TOP)
+
+win.mainloop()
