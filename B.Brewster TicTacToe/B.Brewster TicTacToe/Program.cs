@@ -21,28 +21,34 @@ namespace B.Brewster_TicTacToe
             int y = 3;
             int x = 3;
             bool v = false;
-            while (v != true)
+            while (v == false)
             {
-                char[] k = new char[] { 'X', 'O' };
-                k[w] = k[w++];
-
-                //printBoard(board);
-                Console.Write("Player " + w + ", What row do you want?:");
-                y = Convert.ToInt32(Console.ReadLine());
-                Console.Write("What column do you want?:");
-                x = Convert.ToInt32(Console.ReadLine());
-                ProcessTurn(board, player, y, x, w, k);
-                VarifyBoard(board);
-                for (int i = 0; i < board.GetLength(0); i++)
+                for (w = 0; w < 3; w++)
                 {
+                    char[] k = new char[] { 'X', 'O' };
+                    if (w == 0)
+                    {
+                        k[0] = 'X';
+                    }
+                    if(w ==1)
+                    {
+                        k[1] = 'O';
+                    }
                     if (w > 1)
                     {
                         w = 0;
                     }
+                    //printBoard(board);
+                    Console.Write("Player " + (w +1) + ", What row do you want?:");
+                    y = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("What column do you want?:");
+                    x = Convert.ToInt32(Console.ReadLine());
+                    ProcessTurn(board, y ,x);
+                    NewBoard(board, player, y, x, w, k);
+                    VarifyBoard(board);
                     
                 }
             }
-            
         }
         static void printBoard(int[,] board)
         {
@@ -70,49 +76,49 @@ namespace B.Brewster_TicTacToe
                         {
                             if (board[i, j] == 'X')
                             {
-                                for (i = 0; i <= 2; i++)
+                                i++;
+                                if(board[i,j] == 'X')
                                 {
-                                    for (j = 0; j <= 2; j++)
+                                    i++;
+                                    if (board[i, j] == 'X')
                                     {
-                                        if (board[i, j] == 'X')
-                                        {
-                                            for (i = 0; i <= 1; i++)
-                                            {
-                                                for (j = 0; j <= 1; j++)
-                                                {
-                                                    if (board[i, j] == 'X')
-                                                    {
-                                                        bool v = true;
-                                                        Console.WriteLine("Player 1 Wins!");
-                                                    }
-                                                }
-                                            }
-                                        }
+                                        bool v = true;
+                                        Console.WriteLine("Player 1 Wins!");
+                                    }
+                                    else
+                                    {
+                                        break;
                                     }
                                 }
+                                break;
+                                
                             }
-                            if (board[i, j] == 'O')
+                            else if (board[i, j] == 'O')
                             {
-                                for (i = 0; i <= 2; i++)
+                                if (board[i + 1, j] == 'O')
                                 {
-                                    for (j = 0; j <= 2; j++)
+                                    if (board[i + 2, j] == 'O')
                                     {
-                                        if (board[i, j] == 'O')
-                                        {
-                                            for (i = 0; i <= 1; i++)
-                                            {
-                                                for (j = 0; j <= 1; j++)
-                                                {
-                                                    if (board[i, j] == 'O')
-                                                    {
-                                                        bool v = true;
-                                                        Console.WriteLine("Player 2 Wins!");
-                                                    }
-                                                }
-                                            }
-                                        }
+                                        bool v = true;
+                                        Console.WriteLine("Player 2 Wins!");
+                                    }
+                                    else
+                                    {
+                                        break;
                                     }
                                 }
+                                else if(board[i+1, j+1]== 'O')
+                                {
+                                    if (board[i + 1, j + 1] == 'O')
+                                    {
+                                        Console.WriteLine("Player 2 Wins!");
+                                    }
+                                } 
+                                else
+                                {
+                                    break;
+                                }
+
                             }
                             else if (board[i, j] == ' ')
                             {
@@ -123,10 +129,8 @@ namespace B.Brewster_TicTacToe
                 }
             }
         }
-
-        static void ProcessTurn(int[,] board, char player, int y, int x, int w, char[] k)
+        static void NewBoard(int[,] board, char player, int y, int x, int w, char[] k)
         {
-
             Console.WriteLine();
             Console.WriteLine("   0   1    2 ");
             for (int i = 0; i < board.GetLength(0); i++)
@@ -134,11 +138,7 @@ namespace B.Brewster_TicTacToe
                 Console.Write(i + "|  ");
                 for (int j = 0; j < board.GetLength(1); j++)
                 {
-                    if (i == y && j == x && board[i, j] != ' ')
-                    {
-                        Console.WriteLine("That spot is already choosen");
-                    }
-                    else if (board[i, j] == 'X') 
+                    if (board[i, j] == 'X')
                     {
                         Console.Write("X|  ");
                     }
@@ -151,12 +151,12 @@ namespace B.Brewster_TicTacToe
                         if (w == 0)
                         {
                             board[i, j] = 'X';
-                            Console.Write("X|  ");
+                            Console.Write(k[w] + "|  ");
                         }
                         else if (w == 1)
                         {
                             board[i, j] = 'O';
-                            Console.Write("O|  ");
+                            Console.Write(k[w] + "|  ");
                         }
                         //Console.Write(k[w] + "| ");
                     }
@@ -164,6 +164,24 @@ namespace B.Brewster_TicTacToe
                     {
                         board[i, j] = ' ';
                         Console.Write(" |  ");
+                    }
+                }
+                Console.WriteLine();
+            }
+        }
+        static void ProcessTurn(int[,] board, int y, int x)
+        {
+            Console.WriteLine();
+            for (int i = y; i < board.GetLength(0); i++)
+            {
+                for (int j = x; j < board.GetLength(1); j++)
+                {
+                    if (i == y && j == x)
+                    {
+                        if (board[i, j] != ' ')
+                        {
+                            Console.WriteLine("That spot is already choosen");
+                        }
                     }
                 }
                 Console.WriteLine();
