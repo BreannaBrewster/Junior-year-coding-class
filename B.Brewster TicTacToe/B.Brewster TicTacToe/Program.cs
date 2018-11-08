@@ -76,50 +76,39 @@ namespace B.Brewster_TicTacToe
                         {
                             if (board[i, j] == 'X')
                             {
-                                i++;
-                                if(board[i,j] == 'X')
+                                if(board[i, j] == 'X' && board[i + 1, j] == 'X')
                                 {
-                                    i++;
-                                    if (board[i, j] == 'X')
+                                    if(board[i, j] == 'X' && board[i + 1, j] == 'X' && board[i + 2, j] == 'X')
                                     {
-                                        bool v = true;
                                         Console.WriteLine("Player 1 Wins!");
-                                    }
-                                    else
-                                    {
                                         break;
                                     }
                                 }
-                                break;
-                                
                             }
                             else if (board[i, j] == 'O')
                             {
-                                if (board[i + 1, j] == 'O')
+                                if (board[i, j] == 'O' && board[i + 1, j] == 'O')
                                 {
-                                    if (board[i + 2, j] == 'O')
+                                    if (board[i, j] == 'O' && board[i + 1, j] == 'O' && board[i + 2, j] == 'O')
                                     {
-                                        bool v = true;
-                                        Console.WriteLine("Player 2 Wins!");
-                                    }
-                                    else
-                                    {
+                                        Console.WriteLine("Player  Wins!");
                                         break;
                                     }
                                 }
-                                else if(board[i+1, j+1]== 'O')
-                                {
-                                    if (board[i + 1, j + 1] == 'O')
-                                    {
-                                        Console.WriteLine("Player 2 Wins!");
-                                    }
-                                } 
-                                else
-                                {
-                                    break;
-                                }
-
                             }
+                            //else if(board[i+1, j+1]== 'O')
+                            //{
+                            //if (board[i + 1, j + 1] == 'O')
+                            // {
+                            //    Console.WriteLine("Player 2 Wins!");
+                            //}
+                            // } 
+                            //else
+                            //{
+                            //    break;
+                            //}
+
+                            //}
                             else if (board[i, j] == ' ')
                             {
                                 bool v = false;
