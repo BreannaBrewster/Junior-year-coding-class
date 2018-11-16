@@ -66,6 +66,11 @@ namespace B.Brewster_TicTacToe
         }
         static void VarifyBoard(int[,] board)
         {
+            //This is waaaaay over complicated. For this, just hard code each line like in the following comment, there would be 16 total.
+            //if (board[0,0] == 'X' && board[0,1] == 'X' && board[0,2] == 'X')
+            //{
+            //    Console.WriteLine("X wins!");
+            //}
             for (int i = 0; i < board.GetLength(0); i++)
             {
                 for (int j = 0; j < board.GetLength(1); j++)
@@ -161,20 +166,25 @@ namespace B.Brewster_TicTacToe
         static void ProcessTurn(int[,] board, int y, int x)
         {
             Console.WriteLine();
-            for (int i = y; i < board.GetLength(0); i++)
+            //The code below does everything except the additional Console.WriteLine() without all the complexity.
+            if (board[x, y] != ' ')
             {
-                for (int j = x; j < board.GetLength(1); j++)
-                {
-                    if (i == y && j == x)
-                    {
-                        if (board[i, j] != ' ')
-                        {
-                            Console.WriteLine("That spot is already choosen");
-                        }
-                    }
-                }
-                Console.WriteLine();
+                Console.WriteLine("That spot is already choosen");
             }
+            //for (int i = y; i < board.GetLength(0); i++)
+            //{
+            //    for (int j = x; j < board.GetLength(1); j++)
+            //    {
+            //        if (i == y && j == x)
+            //        {
+            //            if (board[i, j] != ' ')
+            //            {
+            //                Console.WriteLine("That spot is already choosen");
+            //            }
+            //        }
+            //    }
+            //    Console.WriteLine();
+            //}
         }
     }
 }
