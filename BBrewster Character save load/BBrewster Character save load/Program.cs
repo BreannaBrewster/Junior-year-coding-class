@@ -9,7 +9,6 @@ namespace BBrewster_Character_save_load
         static void Main(string[] args)
         {
             int answer;
-            string n;
             
             List<Character> characters = new List<Character>();
             do
@@ -37,19 +36,15 @@ namespace BBrewster_Character_save_load
                 }
                 if (answer == 4)
                 {
+                    LoadCharacters();
                     Console.Write("What is your character's name?: ");
                     string characterName = Console.ReadLine();
-                    LoadCharacter(characterName);
                     Console.WriteLine("Welcome back" + characterName + " your stats are:");
-                    Console.WriteLine(newCharacter.name);
-                    Console.WriteLine(newCharacter.intelligence);
-                    Console.WriteLine(newCharacter.strength);
-                    Console.WriteLine(newCharacter.health);
-                    Console.WriteLine(newCharacter.luck);
+                    LoadCharacter(characterName);
                 }
                 if (answer == 5)
                 {
-
+                    
                 }
             } while (answer != 6);
         }
@@ -75,19 +70,56 @@ namespace BBrewster_Character_save_load
         {
 
         }
+        static void VerifyCharacter(Character characterName)
+        {
+            string path = AppDomain.CurrentDomain.BaseDirectory + characterName.name + ".txt";
+            if (File.Exists(path))
+            {
+                if (Console.ReadLine()[0] == 'y' || Console.ReadLine()[0] == 'Y')
+                {
+                    using (StreamWriter sw = new StreamWriter(path))
+                    {
+                        sw.WriteLine(characterName.name);
+                        sw.WriteLine(characterName.intelligence);
+                        sw.WriteLine(characterName.strength);
+                        sw.WriteLine(characterName.health);
+                        sw.WriteLine(characterName.luck);
+                    }
+                }
+            }
+        }
         static void SaveCharacter(Character newCharacter)
         {
-            string path = @"C:\Users\186741\Documents\Junior-year-coding-class\BBrewster Character saveload\BBrewster Character saveload\bin\Debug\netcoreapp2.1\Character.txt";
-            path = AppDomain.CurrentDomain.BaseDirectory + @"Character_" + newCharacter.name +".txt";
-            List<Character> characters = new List<Character>();
-            characters.Add(newCharacter);
-            using (StreamWriter sw = new StreamWriter(path))
+            string path = AppDomain.CurrentDomain.BaseDirectory +newCharacter.name +".txt";
+            if (File.Exists(path))
             {
-                sw.WriteLine(newCharacter.name);
-                sw.WriteLine(newCharacter.intelligence);
-                sw.WriteLine(newCharacter.strength);
-                sw.WriteLine(newCharacter.health);
-                sw.WriteLine(newCharacter.luck);
+                Console.Write("This character already exists. Do you want to overwrite it?(y/n):");
+                if (Console.ReadLine()[0] == 'y' || Console.ReadLine()[0] == 'Y')
+                {
+                    using (StreamWriter sw = new StreamWriter(path))
+                    {
+                        sw.WriteLine(newCharacter.name);
+                        sw.WriteLine(newCharacter.intelligence);
+                        sw.WriteLine(newCharacter.strength);
+                        sw.WriteLine(newCharacter.health);
+                        sw.WriteLine(newCharacter.luck);
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Character not overwritten");
+                }
+            }
+            else
+            {
+                using (StreamWriter sw = new StreamWriter(path))
+                {
+                    sw.WriteLine(newCharacter.name);
+                    sw.WriteLine(newCharacter.intelligence);
+                    sw.WriteLine(newCharacter.strength);
+                    sw.WriteLine(newCharacter.health);
+                    sw.WriteLine(newCharacter.luck);
+                }
             }
         }
         static Character LoadCharacter(string characterName)
@@ -96,44 +128,66 @@ namespace BBrewster_Character_save_load
             int i = 0;
             int s = 0;
             int l= 0;
-            int h= 0;
-            string path = @"C:\Users\186741\Documents\Junior-year-coding-class\BBrewster Character saveload\BBrewster Character saveload\bin\Debug\netcoreapp2.1\Character.txt";
-            path = AppDomain.CurrentDomain.BaseDirectory + @"Character_" + characterName + ".txt";
+            int h = 0;
+            string path = AppDomain.CurrentDomain.BaseDirectory + characterName + ".txt";
             using (StreamReader sr = new StreamReader(path))
             {
                 for(int j=0; j<6; j++)
                 {
                     if (j == 1)
                     {
-                        n = Console.ReadLine();
+                        n = sr.ReadLine();
                     }
                     else if (j == 2)
                     {
-                        i = Convert.ToInt32(Console.ReadLine());
+                        i = Convert.ToInt32(sr.ReadLine());
                     }
                     else if (j == 3)
                     {
-                        s = Convert.ToInt32(Console.ReadLine());
+                        s = Convert.ToInt32(sr.ReadLine());
                     }
                     else if (j == 4)
                     {
-                        h = 100;
+                        h = Convert.ToInt32(sr.ReadLine()); ;
                     }
                     else if (j == 5)
                     {
-                        l = Convert.ToInt32(Console.ReadLine());
+                        l = Convert.ToInt32(sr.ReadLine());
                     }
                 }
+
             }
             Character newCharacter = new Character(n, i, s, h, l);
+            Console.WriteLine(newCharacter.name);
+            Console.WriteLine(newCharacter.intelligence);
+            Console.WriteLine(newCharacter.strength);
+            Console.WriteLine(newCharacter.health);
+            Console.WriteLine(newCharacter.luck);
             return newCharacter;
         }
-        //List<Character> LoadCharacters()
-        //{
-            //using (StreamReader sr = new StreamReader(AppDomain.CurrentDomain.BaseDirectory))
-            //{
-                //namespace.Contains(".txt")
-            //}
+        static List<Character> LoadCharacters()
+        {
+            string path = AppDomain.CurrentDomain.BaseDirectory;
+            List<Character> characters = new List<Character>();
+            string[] characterFiles = Directory.GetFiles(path, "*.txt");
+            for (int i = 0; i < characterFiles.Length; i++)
+            {
+                characterFiles[i] = Path.GetFileName(characterFiles[i]);
+                
+            }
+            foreach(var c in characters)
+            {
+
+            }
+            return LoadCharacters();
+        }
+        static void PrintAllCharacters(List<Character> characters)
+        {
+            foreach (Character c in LoadCharacters())
+            {
+                Console.WriteLine(c);
+            }
+        }
             
         //}
         //bool DeleteCharacter(List<Character> characters, string n)
