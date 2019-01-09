@@ -21,9 +21,9 @@ namespace Stack
             
             if(hold.Count < 2)
             {
-                Console.WriteLine("There is one element in this stack. Are you sure you want to remove it (Y/N)");
+                Console.WriteLine("There is" + hold.Count + " element in this stack. Are you sure you want to delete this stack? (Y/N)");
                 string x = Console.ReadLine().ToUpper();
-                if(x[0] == 'Y')
+                if(x[0] == 'Y' || x[0] == 'y')
                 {
                     List<int> hold = new List<int>();
                 }
@@ -32,14 +32,14 @@ namespace Stack
             {
                 b = hold[hold.Count - 1];
                 hold.RemoveAt(hold.Count - 1);
-                //Console.WriteLine(b);
+                Console.WriteLine(b);
             }
             return b;
         }
         public int peek()
         {
             Console.Write(hold[hold.Count - 1]);
-            //Console.WriteLine();
+            Console.WriteLine();
             return b;
         }
         public void print()
