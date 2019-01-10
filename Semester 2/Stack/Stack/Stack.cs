@@ -50,5 +50,19 @@ namespace Stack
             }
             Console.WriteLine();
         }
+        public int Search(int a)
+        {
+            int c;
+            Console.WriteLine("The value" + a + "is located at the position(s): ");
+            foreach(int i in hold)
+            {
+                if(i == a)
+                {
+                    i = c;
+                    Console.Write(i + ", ");
+                }
+            }
+            return c;
+        }
     }
 }
