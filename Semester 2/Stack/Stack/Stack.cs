@@ -56,10 +56,10 @@ namespace Stack
             Console.WriteLine("The value" + a + "is located at the position(s): ");
             foreach(int i in hold)
             {
+                c++;
                 if(i == a)
                 {
-                    i = c;
-                    Console.Write(i + ", ");
+                    Console.Write(c + ", ");
                 }
             }
             return c;
