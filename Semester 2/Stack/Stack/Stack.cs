@@ -52,14 +52,21 @@ namespace Stack
         }
         public int Search(int a)
         {
-            int c;
+            int c=-1;
+            int d = 0;
             Console.WriteLine("The value" + a + "is located at the position(s): ");
             foreach(int i in hold)
             {
+                if (d > 1)
+                {
+                    Console.Write(", ");
+                }
                 c++;
                 if(i == a)
                 {
-                    Console.Write(c + ", ");
+                    d++;
+                    Console.Write(c);
+                    
                 }
             }
             return c;
