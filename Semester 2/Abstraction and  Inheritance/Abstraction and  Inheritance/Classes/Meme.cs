@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Abstraction_and_Inheritance.Classes
+namespace Abstraction_and__Inheritance.Classes
 {
     abstract class Meme : Dogs
     {
@@ -10,11 +10,11 @@ namespace Abstraction_and_Inheritance.Classes
         protected bool isPopular;
         protected float stupidity;
 
-        public Meme(float height,string color, float length, string tag, float stupidity)
+        public Meme(float height, string color, float length, string tag, float stupidity)
             : base(height, length, color)
         {
             isPopular = true;
-            this.tag= tag;
+            this.tag = tag;
             this.stupidity = stupidity;
         }
     }

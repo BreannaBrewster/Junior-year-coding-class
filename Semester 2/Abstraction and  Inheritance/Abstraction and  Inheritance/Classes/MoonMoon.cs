@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Abstraction_and_Inheritance.Classes
+namespace Abstraction_and__Inheritance.Classes
 {
     class MoonMoon : Meme
     {
@@ -12,6 +12,7 @@ namespace Abstraction_and_Inheritance.Classes
             stupidity = rand.Next(5, 10);
             color = "grey/black";
             tag = "MoonMoon";
+            height = 
         }
         public override void statement()
         {

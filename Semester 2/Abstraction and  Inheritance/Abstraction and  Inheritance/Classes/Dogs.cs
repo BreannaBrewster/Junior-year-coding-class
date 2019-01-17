@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Abstraction_and_Inheritance
+namespace Abstraction_and__Inheritance.DogClasses
 {
     abstract class Dogs
     {
