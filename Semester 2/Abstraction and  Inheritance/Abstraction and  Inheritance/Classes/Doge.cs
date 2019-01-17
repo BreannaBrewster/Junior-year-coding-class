@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Abstraction_and__Inheritance.Classes
+namespace Abstraction_and__Inheritance.DogClasses
 {
     class Doge : Meme
     {
@@ -10,7 +10,7 @@ namespace Abstraction_and__Inheritance.Classes
         : base(height, color, length, tag, stupidity)
         {
             length = rand.Next(13, 18);
-            height = length - 2;
+            height = rand.Next(11, 16);
             color = "tan";
             tag = "Doge";
             stupidity = rand.Next(3, 7);

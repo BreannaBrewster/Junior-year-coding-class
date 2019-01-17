@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Abstraction_and__Inheritance.Classes
+namespace Abstraction_and__Inheritance.DogClasses
 {
     class MoonMoon : Meme
     {
@@ -10,13 +10,14 @@ namespace Abstraction_and__Inheritance.Classes
             : base(height, color, length, tag, stupidity)
         {
             stupidity = rand.Next(5, 10);
-            color = "grey/black";
+            color = "grey/black/white";
             tag = "MoonMoon";
-            height = 
+            height = rand.Next(20, 25);
+            length = rand.Next(23, 28);
         }
         public override void statement()
         {
-            Console.WriteLine("Damn it MoonMoon");
+            Console.WriteLine("Damn it Moon Moon");
         }
     }
 }

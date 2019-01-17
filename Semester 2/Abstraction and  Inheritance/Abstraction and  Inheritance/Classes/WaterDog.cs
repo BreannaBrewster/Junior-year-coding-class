@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Abstraction_and__Inheritance.Classes
+namespace Abstraction_and__Inheritance.DogClasses
 {
     class waterDog : Normal
     {
-        public waterDog(float volume, string location, bool isFluffy, float height, float length, float pitch, string color, string name, bool isFriendly)
-            : base(height, length, color, volume, location, isFriendly)
+        public waterDog(float volume, string location, float height, float length, string color, string name, bool isFriendly)
+            : base(height,length, color,volume, location, isFriendly, name)
         {
             isFriendly = true;
             color = "grey";
@@ -19,7 +19,7 @@ namespace Abstraction_and__Inheritance.Classes
         }
         public override void statement()
         {
-            Console.WriteLine("hello land dog, I am water dog");
+            Console.WriteLine("Hello land dog, I am water dog");
         }
     }
 }
