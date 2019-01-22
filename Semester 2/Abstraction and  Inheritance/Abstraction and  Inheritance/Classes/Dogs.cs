@@ -11,11 +11,10 @@ namespace Abstraction_and__Inheritance.DogClasses
         protected string color;
         protected float length;
 
-        public Dogs(float height, float length, string color)
+        public Dogs(float height, float length)
         {
             this.height = height;
             this.length = length;
-            this.color = color;
         }
         public abstract void statement();
     }

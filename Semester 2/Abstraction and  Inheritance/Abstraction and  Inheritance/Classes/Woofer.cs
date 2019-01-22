@@ -7,8 +7,8 @@ namespace Abstraction_and__Inheritance.DogClasses
     class Woofer : Doggo
     {
         string c;
-        public Woofer(float height, float length, float volume, float pitch, string color, string location, string name, bool isFluffy, bool isFriendly, float age)
-            : base(height, length, color, volume, location, isFluffy, isFriendly, pitch, name, age)
+        public Woofer(float height, float length, float volume, float pitch, string name, float age)
+            : base(height, length, volume, pitch, name, age)
         {
 
             int a = rand.Next(1, 3);
@@ -59,10 +59,11 @@ namespace Abstraction_and__Inheritance.DogClasses
                 c = "angerly and growls";
             }
         }
+
         public override void statement()
         {
-            Console.WriteLine("*the dog barks " + c + "*");
-
+            Console.WriteLine("*" + name + " barks " + c + "*");
         }
+
     }
 }

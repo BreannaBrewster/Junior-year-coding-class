@@ -6,8 +6,8 @@ namespace Abstraction_and__Inheritance.DogClasses
 {
     class MoonMoon : Meme
     {
-        public MoonMoon(string color, string tag, float height, float length, float stupidity)
-            : base(height, color, length, tag, stupidity)
+        public MoonMoon(float height, float length, float stupidity)
+            : base(height, length, stupidity)
         {
             stupidity = rand.Next(5, 10);
             color = "grey/black/white";
@@ -18,6 +18,7 @@ namespace Abstraction_and__Inheritance.DogClasses
         public override void statement()
         {
             Console.WriteLine("Damn it Moon Moon");
+            Console.WriteLine("******************************");
         }
     }
 }

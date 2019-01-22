@@ -9,13 +9,12 @@ namespace Abstraction_and__Inheritance.DogClasses
         protected float volume;
         protected string location;
         protected bool isFriendly;
+        protected string species;
         protected string name;
-        public Normal(float height, float length, string color, float volume, string location, bool isFriendly, string name)
-            : base(height, length, color)
+        public Normal(float height, float length, string name, float volume)
+            : base(height, length)
         {
-            this.location = location;
             this.volume = volume;
-            this.isFriendly = isFriendly;
             this.name = name;
         }
     }

@@ -6,8 +6,8 @@ namespace Abstraction_and__Inheritance.DogClasses
 {
     class Doge : Meme
     {
-        public Doge(float height, float length, string color, string tag, float stupidity)
-        : base(height, color, length, tag, stupidity)
+        public Doge(float height, float length, float stupidity)
+        : base(height, length, stupidity)
         {
             length = rand.Next(13, 18);
             height = rand.Next(11, 16);
@@ -19,6 +19,7 @@ namespace Abstraction_and__Inheritance.DogClasses
         public override void statement()
         {
             Console.WriteLine("Much wow");
+            Console.WriteLine("******************************");
         }
     }
 }
