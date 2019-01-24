@@ -7,23 +7,23 @@ namespace Abstraction_and__Inheritance.DogClasses
     class Yipper : Doggo
     {
         string c;
-        public Yipper(float height, float length, float volume, float pitch, string name, bool isFriendly, float age)
-            : base(height, length, volume, pitch, name, age)
+        public Yipper(string name)
+            : base(name)
         {
-            //int a = rand.Next(1, 3);
-            //if (a == 1)
-            //{
-            //isFriendly = false;
-            //isFluffy = false;
-            //}
-            //else
-            //{
-            //    isFriendly = true;
-            //    isFluffy = true;
-            //}
-            //pitch = rand.Next(7, 11);
-            //volume = rand.Next(5, 11);
-            //age = rand.Next(0, 15);
+            int a = rand.Next(1, 3);
+            if (a == 1)
+            {
+            isFriendly = false;
+            isFluffy = false;
+            }
+            else
+            {
+                isFriendly = true;
+                isFluffy = true;
+            }
+            pitch = rand.Next(7, 11);
+            volume = rand.Next(5, 11);
+            age = rand.Next(0, 15);
             int b = rand.Next(1, 6);
             if (b == 1)
             {

@@ -7,8 +7,8 @@ namespace Abstraction_and__Inheritance.DogClasses
     class Woofer : Doggo
     {
         string c;
-        public Woofer(float height, float length, float volume, float pitch, string name, float age)
-            : base(height, length, volume, pitch, name, age)
+        public Woofer(string name)
+            : base(name)
         {
 
             int a = rand.Next(1, 3);

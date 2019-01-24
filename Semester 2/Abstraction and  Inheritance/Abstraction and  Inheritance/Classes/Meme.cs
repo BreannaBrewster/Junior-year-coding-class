@@ -10,11 +10,10 @@ namespace Abstraction_and__Inheritance.DogClasses
         protected bool isPopular;
         protected float stupidity;
 
-        public Meme(float height, float length, float stupidity)
-            : base(height, length)
+        public Meme()
+            : base()
         {
             isPopular = true;
-            this.stupidity = stupidity;
 
         }
     }

@@ -6,8 +6,8 @@ namespace Abstraction_and__Inheritance.DogClasses
 {
     class Doge : Meme
     {
-        public Doge(float height, float length, float stupidity)
-        : base(height, length, stupidity)
+        public Doge()
+        : base()
         {
             length = rand.Next(13, 18);
             height = rand.Next(11, 16);

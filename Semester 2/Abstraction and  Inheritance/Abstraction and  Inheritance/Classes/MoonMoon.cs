@@ -6,8 +6,8 @@ namespace Abstraction_and__Inheritance.DogClasses
 {
     class MoonMoon : Meme
     {
-        public MoonMoon(float height, float length, float stupidity)
-            : base(height, length, stupidity)
+        public MoonMoon()
+            : base()
         {
             stupidity = rand.Next(5, 10);
             color = "grey/black/white";

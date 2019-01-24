@@ -10,12 +10,9 @@ namespace Abstraction_and__Inheritance.DogClasses
         protected float pitch;
         protected float age;
         protected string[] s = new string[5] { "white", "brown", "tan", "black", "silver" };
-        public Doggo(float height, float length, float volume, float pitch, string name, float age)
-            : base(height, length, name, volume)
+        public Doggo(string name)
+            : base(name)
         {
-            this.pitch = pitch;
-            this.age = age;
-
         }
     }
 }
