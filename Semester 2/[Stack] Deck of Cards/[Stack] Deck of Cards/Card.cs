@@ -14,8 +14,8 @@ namespace _Stack__Deck_of_Cards
         {
 
         }
-        public readonly Suits suit;
-        public readonly Values value;
+        //public readonly Suits suit;
+        //public readonly Values value;
 
         public void Print()
         {
