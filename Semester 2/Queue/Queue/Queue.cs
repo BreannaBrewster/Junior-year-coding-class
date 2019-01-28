@@ -30,13 +30,9 @@ namespace Queue
             }
             else
             {
-                b = hold[hold[0]];
-                hold.RemoveAt(hold[0]);
+                b = hold[0];
+                hold.Remove(hold[0]);
                 Console.WriteLine(b);
-                for(int i=1;i<hold.Count;i++)
-                {
-                    hold[i - 1] = hold[i];
-                }
             }
             return b;
         }
@@ -65,7 +61,7 @@ namespace Queue
         {
             int c = -1;
             int d = 0;
-            Console.WriteLine("The value" + a + "is located at the position(s): ");
+            Console.WriteLine("The value " + a + " is located at the position(s): ");
             foreach (int i in hold)
             {
                 if (d > 1)
