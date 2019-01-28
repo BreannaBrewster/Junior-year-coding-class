@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>BBrewster_Competency_Exam</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="C:\Users\bre40\Desktop\BBrewster_Competency Exam.cs" Link="BBrewster_Competency Exam.cs" />
+  </ItemGroup>
+
+</Project>
