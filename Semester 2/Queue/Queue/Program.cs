@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Queue
 {
@@ -8,6 +9,7 @@ namespace Queue
         {
             int menu = 1;
             Queue myQueue = new Queue();
+            List<int> l = new List<int>();
             while (menu != 0)
             {
                 Console.WriteLine();
