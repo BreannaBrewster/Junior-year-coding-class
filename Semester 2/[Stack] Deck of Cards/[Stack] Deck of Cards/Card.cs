@@ -4,8 +4,8 @@ using System.Text;
 
 namespace _Stack__Deck_of_Cards
 {
-    public enum Suits { Hearts = 1, Spades, Clubs, Diamonds };
-    public enum Values { Ace = 1, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King };
+    public enum Suits { Hearts, Spades, Clubs, Diamonds };
+    public enum Values { Ace, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King };
     class Card
     {
         Random rand = new Random();

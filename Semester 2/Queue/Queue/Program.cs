@@ -8,7 +8,7 @@ namespace Queue
         static void Main(string[] args)
         {
             int menu = 1;
-            Queue myQueue = new Queue();
+            Random rand = new Random();
             List<int> l = new List<int>();
             while (menu != 0)
             {
@@ -45,6 +45,11 @@ namespace Queue
                     int a = int.Parse(Console.ReadLine());
                     myQueue.Search(a);
                 }
+            }
+            Queue<Currencies> currencies = new Queue<Currencies>();
+            for (int i = 0; i < 10; i++)
+            {
+                currencies.EnQueue(new Currencies(rand.Next(0, 100), rand.Next(0, 100), rand.Next(0, 100)));
             }
         }
     }

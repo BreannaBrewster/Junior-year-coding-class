@@ -26,5 +26,6 @@ namespace Queue
         {
             Console.WriteLine("You have " + goldCount + " gold, " + silverCount + " siver, and " + copperCount + " copper");
         }
+        
     }
 }

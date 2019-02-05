@@ -6,21 +6,32 @@ namespace _Stack__Deck_of_Cards
 {
     class Deck
     {
-        
-        List<Card> deck = new List<Card>();
+        public List<Card> Cards { get; set; }
         List<Card> discard = new List<Card>();
-        List<Card> newDeck = new List<Card>();
         public Deck()
         {
-
-            for (int suit = 0; suit < 4; suit++)
+            foreach (Suits suit in Enum.GetValues(typeof(Suits)))
             {
-                for (int value = 0; value < 13; value++)
+                for (int i = 2; i < 11; i++)
                 {
-                    deck.Add(new Card((Suits)suit, (Values)value));
+                    Cards.Add(new Card(suit, i.ToString()));
                 }
             }
         }
+        
+        //List<Card> discard = new List<Card>();
+        //List<Card> newDeck = new List<Card>();
+        //public Deck()
+        //{
+
+        //    for (int suit = 0; suit < 4; suit++)
+        //    {
+        //        for (int value = 0; value < 13; value++)
+        //        {
+        //            deck.Add(new Card((Suits)suit, (Values)value));
+        //        }
+        //    }
+        //}
         public void Shuffle()
         {
             Random rand = new Random();
@@ -41,12 +52,12 @@ namespace _Stack__Deck_of_Cards
         public void Draw()
         {
             Random rand = new Random();
-            Card newCard = deck[rand.Next(0, deck.Count)];
-            deck.Remove(newCard);
+            //Card newCard = deck[rand.Next(0, deck.Count)];
+            //deck.Remove(newCard);
         }
         public void Discard(Card c)
         {
-            newDeck.Remove(c);
+            //newDeck.Remove(c);
             discard.Add(c);
         }
         public void PrintDiscard()
