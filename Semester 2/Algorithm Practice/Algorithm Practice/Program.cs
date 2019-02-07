@@ -11,6 +11,8 @@ namespace Algorithm_Practice
     {
         static void Main(string[] args)
         {
+            string path;
+            
             Console.WriteLine("------------------------------------------------------------------");
             Console.WriteLine("Please enter an integer value for the action you want to perform.");
             Console.WriteLine("1. Print all multiples of 3 or 5 between selected values.");
@@ -22,19 +24,14 @@ namespace Algorithm_Practice
             switch (userInput)
             {
                 case 1:
+                    path = AppDomain.CurrentDomain.BaseDirectory + @"Prob01.txt";
                     CoinCount();
                     break;
                 case 2:
-                    Console.WriteLine("Please enter the number of elements you want to add to the array:");
-                    int k = int.Parse(Console.ReadLine());
-                    List<int> f = new List<int>();
-                    bool valid = true;
-                    for (int i = 0; i < k; i++)
-                    {
-                        Console.Write("What value do you want to add?");
-                        string s= Console.ReadLine();
-                    }
-                    
+                    path = AppDomain.CurrentDomain.BaseDirectory + @"Prob02.txt";
+                    DetermineAscendingOrDescending();
+
+
 
                     break;
                 case 3:
@@ -51,44 +48,51 @@ namespace Algorithm_Practice
 
         static void CoinCount()
         {
-            Console.WriteLine("Please enter the lower bound to check multiples:");
+            
         }
-        static void DetermineAscendingOrDescending(bool valid, List<float> f )
+        static void DetermineAscendingOrDescending()
         {
-            if(valid==false)
+            string path = AppDomain.CurrentDomain.BaseDirectory + @"Prob01.in_.txt";
+            string s = "";
+            int[] i = new int[30];
+            int d = 0;
+            StreamReader file = new System.IO.StreamReader(path);
+            while ((s = file.ReadLine()) != null)
             {
-                Console.WriteLine("The input was invalid");
+                string[] nArray = s.Split(null);
+                foreach (string w in nArray)
+                {
+                    d++;
+                    bool valid = true;
+                    foreach (char c in w)
+                    {
+                        if (Char.IsDigit(c) )
+                        {
+                            Console.WriteLine("The input was valid");
+                            //valid = false;
+                            break;
+                        }
+                    }
+                    if (valid == true)
+                    {
+                        i[d] = int.TryParse(w, out number );
+                    }
+                }
+            }
+            
+            if (i[0] < i[1] && i[1] < i[2] && i[2] < i[3])
+            {
+                Console.WriteLine("The numbers are in ascending order");
+            }
+            else if (i[0] > i[1] && i[1] > i[2] && i[2] > i[3])
+            {
+                Console.WriteLine("The numbers are in descending order");
             }
             else
             {
-                foreach(int i in f)
+                if (i[0] < i[1] && i[1] < i[2] && i[2] < i[3])
                 {
-                    if(i<i+1 && i+1<i+2)
-                    {
-                        Console.WriteLine("The numbers are in decending order");
-                    }
-                    else if (i > i + 1 && i + 1 > i + 2)
-                    {
-                        Console.WriteLine("The numbers are in ascending order");
-                    }
-                    else
-                    {
-                        Console.WriteLine("The numbers are in random order");
-                    }
-                }
-            }
-        }
-        static void FillList(bool valid, List<int> f, string s)
-        {
-            foreach(char c in s.ToCharArray())
-            {
-                if(!Char.IsDigit(c) && c!= '-')
-                {
-                    valid = false;
-                }
-                else
-                {
-                    f.Add(c);
+                    Console.WriteLine("The numbers are in random order");
                 }
             }
             
