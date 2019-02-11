@@ -132,7 +132,7 @@ namespace Algorithm_Practice
             string s = "";
             int g=0;
             int k = 0;
-            char h;
+            //char h;
             //char j;
             char[] n = new char [100];
             string[] wordArray = s.Split(null);
@@ -151,7 +151,7 @@ namespace Algorithm_Practice
                     string[] charArray = s.Split("-");
                     foreach(string l in charArray)
                     {
-                        h = (char)(int.Parse(l));
+                        char h = (char)  (int.Parse(l));
                         n[k] = h;
                     }
                     n.ToString();
