@@ -130,33 +130,51 @@ namespace Algorithm_Practice
         static void Decode(string path)
         {
             string s = "";
-            int g=0;
+            int g=-111;
             int k = 0;
-            //char h;
-            //char j;
+            int i = 0;
+            string h;
+            int j=0;
             char[] n = new char [100];
-            string[] wordArray = s.Split(null);
+            int[] m = new int[100];
+            char[] splits = { ' ', '-' };
+
             StreamReader file = new System.IO.StreamReader(path);
             while ((s = file.ReadLine()) != null)
             {
-                if (g == 0)
+                string[] wordArray = s.Split(null);
+                string[] charArray = s.Split(splits);
+                int A = (int)'A';
+                if (g < 0)
                 {
-                    foreach (char c in s)
-                    {
-                        g = c;
-                    }
+                    n = s.ToCharArray();
+                    g = n[0] - A;
+                    Console.WriteLine(g + " = " + (char)(g + A));
                 }
-                foreach(string v in wordArray)
+                //Console.WriteLine(g);  
+                else
                 {
-                    string[] charArray = s.Split("-");
-                    foreach(string l in charArray)
+                    foreach (string z in charArray)
                     {
-                        char h = (char)  (int.Parse(l));
-                        n[k] = h;
+                        Console.WriteLine(z);
                     }
-                    n.ToString();
+                    for (int x = 0; x < charArray.Length; i++)
+                    {
+                        k = int.Parse(charArray[x]);
+                        j = k + g;
+                    }
+                    m[i] = j;
+                    i++;
+                    i = 0;
+                    foreach (int b in m)
+                    {
+                        Console.WriteLine((char)b);
+                        n[i] = (char)b;
+                        i++;
+                    }
+                    h = n.ToString();
+                    Console.WriteLine(h);
                 }
-                Console.WriteLine(n);
             }
         }
     }
