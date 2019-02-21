@@ -17,8 +17,9 @@ namespace Algorithm_Practice
             Console.WriteLine("Please enter an integer value for the action you want to perform.");
             Console.WriteLine("1. Count Coin values");
             Console.WriteLine("2. Determine if the number set is Ascending or Decending");
-            Console.WriteLine("3. Decode");
-            Console.WriteLine("4. End the program");
+            Console.WriteLine("3. Factor");
+            Console.WriteLine("4. Scantron Grading");
+            Console.WriteLine("5. End the program");
             Console.WriteLine("------------------------------------------------------------------");
             int userInput = int.Parse(Console.ReadLine());
             switch (userInput)
@@ -33,10 +34,14 @@ namespace Algorithm_Practice
 
                     break;
                 case 3:
-                    path = AppDomain.CurrentDomain.BaseDirectory + @"Prob03.in_.txt";
-                    Decode(path);
+                    path = AppDomain.CurrentDomain.BaseDirectory + @"Prob04.in_.txt";
+                    Factor(path);
                     break;
                 case 4:
+                    path = AppDomain.CurrentDomain.BaseDirectory + @"Prob05.in_.txt";
+                    ScantronGrading(path);
+                    break;
+                case 5:
                     Console.WriteLine("Thanks for using the program.");
                     break;
                 default:
@@ -127,55 +132,74 @@ namespace Algorithm_Practice
                 Console.WriteLine("******************************");
             }
         }
-        static void Decode(string path)
+        static void Factor (string path)
         {
             string s = "";
-            int g=-111;
-            int k = 0;
-            int i = 0;
-            string h;
-            int j=0;
-            char[] n = new char [100];
-            int[] m = new int[100];
-            char[] splits = { ' ', '-' };
-
+            List<int> l1 = new List<int>();
+            int A=1;
             StreamReader file = new System.IO.StreamReader(path);
             while ((s = file.ReadLine()) != null)
             {
-                string[] wordArray = s.Split(null);
-                string[] charArray = s.Split(splits);
-                int A = (int)'A';
-                if (g < 0)
+                for (int i = int.Parse(s); i > 0; i--)
                 {
-                    n = s.ToCharArray();
-                    g = n[0] - A;
-                    Console.WriteLine(g + " = " + (char)(g + A));
+                   if( !l1.Contains(i))
+                    {
+                        l1.Add(i);
+                        A = A * i;
+                    } 
                 }
-                //Console.WriteLine(g);  
+                Console.WriteLine(A);
+            }
+        }
+        static void ScantronGrading(string path)
+        {
+            string s = "";
+            string[] h = new string[] { " " };
+            int q = -1;
+            int f = 0;
+            int g = 0;
+            int correct = 0;
+            int line = 0;
+            List<string> answer = new List<string>();
+            List<string> students = new List<string>();
+            List<int> grade = new List<int>();
+            StreamReader file = new System.IO.StreamReader(path);
+            while ((s = file.ReadLine()) != null)
+            {
+                if (f == 0)
+                {
+                    f = int.Parse(s);
+                }
+                //Console.WriteLine(s);
+                h = s.Split(null);
+                if (h[0] == "STUDENT")
+                {
+                    q++;
+                    line = 0;
+                    correct = 0;
+                    students.Add(s);
+                    grade.Add(g * 20);
+                }
+                if (f != 0 && q == -1)
+                {
+                    answer.Add(s);
+                }
                 else
                 {
-                    foreach (string z in charArray)
+                    if (s == answer[line])
                     {
-                        Console.WriteLine(z);
+                        correct = correct + 1;
                     }
-                    for (int x = 0; x < charArray.Length; i++)
-                    {
-                        k = int.Parse(charArray[x]);
-                        j = k + g;
-                    }
-                    m[i] = j;
-                    i++;
-                    i = 0;
-                    foreach (int b in m)
-                    {
-                        Console.WriteLine((char)b);
-                        n[i] = (char)b;
-                        i++;
-                    }
-                    h = n.ToString();
-                    Console.WriteLine(h);
+                    line++;
                 }
+                g = correct;
+            }
+            grade[q]=grade[q] + (g * 20);
+            for (int n = 1; n < students.Count; n++)
+            {
+                Console.WriteLine(students[n] + ": " + grade[n]);
             }
         }
     }
 }
+
