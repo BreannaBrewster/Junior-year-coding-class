@@ -15,6 +15,7 @@ public class ship : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        speed = speed * 1.1f;
         timer += Time.deltaTime;
         velocity = new Vector3(0, 0, 0);
         if (Input.GetKey(KeyCode.W))

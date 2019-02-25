@@ -484,7 +484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86523d6df579615448d06530adde4b39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime: 1.5
+  spawnTime: 0.75
   Enemy: {fileID: 1991334979}
   spawnPoints:
   - {x: 6.33, y: -4.99, z: -0.1957731}
@@ -583,7 +583,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98df693c4bba1884695b455be4de0033, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  bulletPrefab: {fileID: 0}
+  timer: 0
   velocity: {x: 0, y: 0, z: 0}
 --- !u!61 &1991334981
 BoxCollider2D:
