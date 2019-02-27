@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace Sudoku
 {
@@ -22,19 +23,19 @@ namespace Sudoku
         /// <summary>
         /// Defualt constructor for a sudokuboard. Randomly generates solvable boards.
         /// </summary>
-        public SudokuBoard()
-        {
-            Board = new int[9, 9] {
-                {0,0,0,2,6,0,7,0,1 },
-                {6,8,0,0,7,0,0,9,0},
-                {1,9,0,0,0,4,5,0,0 },
-                {8,2,0,1,0,0,0,4,0 },
-                {0,0,4,6,0,2,9,0,0 },
-                {0,5,0,0,0,3,0,2,8 },
-                {0,0,9,3,0,0,0,7,4 },
-                {0,4,0,0,5,0,0,3,6 },
-                {7,0,3,0,1,8,0,0,0 }};
-        }
+        //public SudokuBoard()
+        //{
+        //    Board = new int[9, 9] {
+        //        {0,0,0,2,6,0,7,0,1 },
+        //        {6,8,0,0,7,0,0,9,0},
+        //        {1,9,0,0,0,4,5,0,0 },
+        //        {8,2,0,1,0,0,0,4,0 },
+        //        {0,0,4,6,0,2,9,0,0 },
+        //        {0,5,0,0,0,3,0,2,8 },
+        //        {0,0,9,3,0,0,0,7,4 },
+        //        {0,4,0,0,5,0,0,3,6 },
+        //        {7,0,3,0,1,8,0,0,0 }};
+        //}
 
         /// <summary>
         /// Overloaded constructor for a sudokuboard that reads in a file and generates
@@ -46,9 +47,26 @@ namespace Sudoku
         /// Use this data to parse a line into the board variable.
         /// </summary>
         /// <param name="fileName">Name of the file you want to load</param>
-        public SudokuBoard(string fileName)
+        public SudokuBoard()//string fileName)
         {
-            throw new NotImplementedException();
+            string s = "";
+            List<string> stringList = new List<string>();
+            Board = new int[9, 9];
+            StreamReader file = new System.IO.StreamReader(AppDomain.CurrentDomain.BaseDirectory + @"HardPuzzles.txt");
+            while ((s = file.ReadLine()) != null)
+            {
+                char[] boardArray = s.ToArray();
+                for (int i = 0; i < 9; i++)
+                {
+                    for (int j = 0; j < 9; j++)
+                    {
+                        Board[i, j] = boardArray[j];
+                        Console.Write(boardArray[j] + ",");
+                    }
+                    Console.WriteLine();
+                }
+            }
+            //throw new NotImplementedException();
         }
 
 
@@ -98,8 +116,10 @@ namespace Sudoku
         /// <returns>List of valid integers for the given row and column</returns>
         public List<int> FindLegalDigits(int row, int col)
         {
+            throw new NotImplementedException();
+
             //Create list of all possible digits (1-9)
-            List<int> possibleDigits = new List<int>() { 1,2,3,4,5,6,7,8,9};
+
             //Remove from the list all elements in the row
 
             //Remove from the list all elements in the column
@@ -107,7 +127,6 @@ namespace Sudoku
             //remove from the list all elements in the box
 
             //return the list
-            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -115,7 +134,7 @@ namespace Sudoku
         /// </summary>
         public void PrintBoard()
         {
-            Console.WriteLine("Y  1  2  3   4  5  6   7  8  9");
+            Console.WriteLine("Y  0  1  2   3  4  5   6  7  8");
             Console.WriteLine("X  ---------------------------");
             for (int row = 0; row < 9; row++)
             {
@@ -123,7 +142,7 @@ namespace Sudoku
                 {
                     Console.WriteLine("  ---------+---------+---------");
                 }
-                Console.Write(row + 1 + "|");
+                Console.Write(row + "|");
                 for(int col = 0; col < 9; col++)
                 {
                     if (col % 3 == 0 && col != 0)

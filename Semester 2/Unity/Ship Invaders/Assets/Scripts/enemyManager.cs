@@ -4,7 +4,7 @@ using UnityEngine;
 
 //GameObject enemy1;
 public class enemyManager : MonoBehaviour {
-    public float spawnTime;
+    public float spawnTime = 2;
     public GameObject Enemy;
     float speed = 2f;
     public List<Vector3> spawnPoints = new List<Vector3>();
@@ -16,7 +16,7 @@ public class enemyManager : MonoBehaviour {
     // Update is called once per frame
     private void Update()
     {
-        spawnTime += spawnTime * .75f;
+        spawnTime += spawnTime * .9999f;
     }
     void Spawn () {
         GameObject newEnemy1 = Instantiate(Enemy);

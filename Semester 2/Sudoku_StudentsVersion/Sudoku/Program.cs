@@ -98,9 +98,9 @@ namespace Sudoku
         {
             int val, row, col;
         GetRow:
-            Console.WriteLine("Enter the row that you want to place (X) (1-9)");
+            Console.WriteLine("Enter the row that you want to place (X) (0-8)");
             int userInput;
-            if (!int.TryParse(Console.ReadLine(), out userInput) || userInput < 1 || userInput > 9)
+            if (!int.TryParse(Console.ReadLine(), out userInput) || userInput < 0 || userInput > 8)
             {
                 Console.WriteLine("You have entered an incorrect input. Please try again.");
 
@@ -109,8 +109,8 @@ namespace Sudoku
             row = userInput;
 
         GetCol:
-            Console.WriteLine("Enter the col that you want to place (Y) (1-9)");
-            if (!int.TryParse(Console.ReadLine(), out userInput) || userInput < 1 || userInput > 9)
+            Console.WriteLine("Enter the col that you want to place (Y) (0-8)");
+            if (!int.TryParse(Console.ReadLine(), out userInput) || userInput < 0 || userInput > 8)
             {
                 Console.WriteLine("You have entered an incorrect input. Please try again.");
 
@@ -128,7 +128,7 @@ namespace Sudoku
             }
             val = userInput;
 
-            if (!board.PlaceValue(val, row - 1, col - 1))
+            if (!board.PlaceValue(val, row, col))
             {
                 Console.WriteLine("PlaceValue returned false because of an invalid input. Try again.");
                 goto GetRow;
