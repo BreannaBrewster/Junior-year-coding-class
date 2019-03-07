@@ -49,24 +49,27 @@ namespace Sudoku
         /// <param name="fileName">Name of the file you want to load</param>
         public SudokuBoard()//string fileName)
         {
-            string s = "";
-            List<string> stringList = new List<string>();
-            Board = new int[9, 9];
-            StreamReader file = new System.IO.StreamReader(AppDomain.CurrentDomain.BaseDirectory + @"HardPuzzles.txt");
-            while ((s = file.ReadLine()) != null)
-            {
-                char[] boardArray = s.ToArray();
-                for (int i = 0; i < 9; i++)
-                {
-                    for (int j = 0; j < 9; j++)
-                    {
-                        Board[i, j] = boardArray[j];
-                        Console.Write(boardArray[j] + ",");
-                    }
-                    Console.WriteLine();
-                }
-            }
-            //throw new NotImplementedException();
+            //string s = "";
+            //Board = new int[9, 9];
+            //int[] intBoardArray = new int[81];
+            //int i = 0;
+            //int j = 0;
+            //int counter=0;
+            //StreamReader file = new System.IO.StreamReader(AppDomain.CurrentDomain.BaseDirectory + @"HardPuzzles.txt");
+            //while ((s = file.ReadLine()) != null)
+            //{
+
+            //    char[] boardArray = s.ToArray();
+            //    foreach (char c in boardArray)
+            //    {
+            //        intBoardArray[i] = c;
+            //    }
+            //    Board[i, j] = intBoardArray[j];
+            //    Console.Write(intBoardArray[j] + " " + Board[i, j] + ",");
+            //    Console.WriteLine();
+            //    i++; j++;
+            //}
+            throw new NotImplementedException();
         }
 
 
@@ -86,13 +89,69 @@ namespace Sudoku
         /// </returns>
         public bool VerifyBoard()
         {
-            throw new NotImplementedException();
-
+            List<int> values = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            bool valid = true;
             //Check all columns in the board, make sure they contain ONLY values 1-9. No duplicates, no exclusions
-
+            for (int x=0;x<9;x++)
+            {
+                for(int y=0; y<9;y++)
+                {
+                  if(!values.Contains(Board[x, y]))
+                    {
+                        valid = false;
+                        break;
+                    }
+                    else
+                    {
+                        values.Remove(Board[x, y]);
+                    }
+                }
+                values = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            }
             //Check all rows in the board, make sure they contain ONLY values 1-9. No duplicates, no exclusions
-
+            values = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            for (int y = 0; y < 9; y++)
+            {
+                for (int x = 0; x < 9; x++)
+                {
+                    if (!values.Contains(Board[x, y]))
+                    {
+                        valid = false;
+                        break;
+                    }
+                    else
+                    {
+                        values.Remove(Board[x, y]);
+                    }
+                }
+                values = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            }
+            values = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
             //Check all boxes in the board, make sure they contain ONLY values 1-9. No duplicates, no exclusions
+            for (int w = 0; w < 3; w++)
+            {
+                for (int k = 0; k < 3; k++)
+                {
+                    for (int x = 0; x < 3; x++)
+                    {
+                        for (int y = 0; y < 3; y++)
+                        {
+                            if (!values.Contains(Board[x+k*3, y+w*3]))
+                            {
+                                valid = false;
+                                break;
+                            }
+                            else
+                            {
+                                values.Remove(Board[x, y]);
+                            }
+                        }
+                    }
+                    values = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+                }
+            }
+            return valid;
+            //throw new NotImplementedException();
         }
 
         /// <summary>
@@ -116,17 +175,46 @@ namespace Sudoku
         /// <returns>List of valid integers for the given row and column</returns>
         public List<int> FindLegalDigits(int row, int col)
         {
-            throw new NotImplementedException();
-
             //Create list of all possible digits (1-9)
-
+            List<int> possibleDigits = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
             //Remove from the list all elements in the row
-
+            for(int i=0; i<9; i++)
+            {
+                for (int j = 0; j < possibleDigits.Count; j++)
+                {
+                    if (Board[i, row] == possibleDigits[j])
+                    {
+                        possibleDigits.Remove(Board[i, row]);
+                    }
+                }
+            }
             //Remove from the list all elements in the column
-
+            for (int i = 0; i < 9; i++)
+            {
+                for (int j = 0; j < possibleDigits.Count; j++)
+                {
+                    if (Board[col, i] == possibleDigits[j])
+                    {
+                        possibleDigits.Remove(Board[col,i]);
+                    }
+                }
+            }
             //remove from the list all elements in the box
-
-            //return the list
+            for (int x = 0; x < 3; x++)
+            {
+                for (int y = 0; y < 3; y++)
+                {
+                    for (int j = 0; j < possibleDigits.Count; j++)
+                    {
+                        if (Board[col+x, row+y] == possibleDigits[j])
+                        {
+                            possibleDigits.Remove(Board[col+x, row+y]);
+                        }
+                    }
+                }
+            }
+            return possibleDigits;
+            //throw new NotImplementedException();
         }
 
         /// <summary>

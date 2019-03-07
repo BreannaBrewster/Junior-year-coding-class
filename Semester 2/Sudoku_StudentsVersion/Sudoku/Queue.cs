@@ -21,7 +21,7 @@ namespace Sudoku
         {
 
         }
-
+        public int Count { get { return queue.Count; } }
         /// <summary>
         /// Enqueues a new board to the back of the queue.
         /// </summary>
@@ -54,5 +54,7 @@ namespace Sudoku
         {
             return queue[queue.Count - 1];
         }
+        
+
     }
 }
