@@ -23,19 +23,19 @@ namespace Sudoku
         /// <summary>
         /// Defualt constructor for a sudokuboard. Randomly generates solvable boards.
         /// </summary>
-        //public SudokuBoard()
-        //{
-        //    Board = new int[9, 9] {
-        //        {0,0,0,2,6,0,7,0,1 },
-        //        {6,8,0,0,7,0,0,9,0},
-        //        {1,9,0,0,0,4,5,0,0 },
-        //        {8,2,0,1,0,0,0,4,0 },
-        //        {0,0,4,6,0,2,9,0,0 },
-        //        {0,5,0,0,0,3,0,2,8 },
-        //        {0,0,9,3,0,0,0,7,4 },
-        //        {0,4,0,0,5,0,0,3,6 },
-        //        {7,0,3,0,1,8,0,0,0 }};
-        //}
+        public SudokuBoard()
+        {
+            Board = new int[9, 9] {
+                {0,0,0,2,6,0,7,0,1 },
+                {6,8,0,0,7,0,0,9,0},
+                {1,9,0,0,0,4,5,0,0 },
+                {8,2,0,1,0,0,0,4,0 },
+                {0,0,4,6,0,2,9,0,0 },
+                {0,5,0,0,0,3,0,2,8 },
+                {0,0,9,3,0,0,0,7,4 },
+                {0,4,0,0,5,0,0,3,6 },
+                {7,0,3,0,1,8,0,0,0 }};
+        }
 
         /// <summary>
         /// Overloaded constructor for a sudokuboard that reads in a file and generates
@@ -47,29 +47,27 @@ namespace Sudoku
         /// Use this data to parse a line into the board variable.
         /// </summary>
         /// <param name="fileName">Name of the file you want to load</param>
-        public SudokuBoard()//string fileName)
+        public SudokuBoard(SudokuBoard curboard)//string fileName)
         {
-            //string s = "";
-            //Board = new int[9, 9];
-            //int[] intBoardArray = new int[81];
-            //int i = 0;
-            //int j = 0;
-            //int counter=0;
-            //StreamReader file = new System.IO.StreamReader(AppDomain.CurrentDomain.BaseDirectory + @"HardPuzzles.txt");
-            //while ((s = file.ReadLine()) != null)
-            //{
+            Array.Copy(curboard.Board, this.Board, this.Board.Length);
+            int x = 0;
+            int y = 0;
+            StreamReader file = new System.IO.StreamReader(AppDomain.CurrentDomain.BaseDirectory + @"HardPuzzles.txt");
+            foreach (char c in file.ReadLine().ToCharArray())
+            {
+                if (x != 8)
+                {
+                    Board[x, y] = int.Parse(c.ToString());
+                    x++;
+                }
+                else
+                {
+                    x = 0;
+                    y++;
+                }
 
-            //    char[] boardArray = s.ToArray();
-            //    foreach (char c in boardArray)
-            //    {
-            //        intBoardArray[i] = c;
-            //    }
-            //    Board[i, j] = intBoardArray[j];
-            //    Console.Write(intBoardArray[j] + " " + Board[i, j] + ",");
-            //    Console.WriteLine();
-            //    i++; j++;
-            //}
-            throw new NotImplementedException();
+            }
+            //throw new NotImplementedException();
         }
 
 
