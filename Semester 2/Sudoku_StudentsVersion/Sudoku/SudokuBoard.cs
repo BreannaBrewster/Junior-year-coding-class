@@ -180,9 +180,9 @@ namespace Sudoku
             {
                 for (int j = 0; j < possibleDigits.Count; j++)
                 {
-                    if (Board[i, row] == possibleDigits[j])
+                    if (Board[row,i] == possibleDigits[j])
                     {
-                        possibleDigits.Remove(Board[i, row]);
+                        possibleDigits.Remove(Board[row,i]);
                     }
                 }
             }
@@ -191,9 +191,9 @@ namespace Sudoku
             {
                 for (int j = 0; j < possibleDigits.Count; j++)
                 {
-                    if (Board[col, i] == possibleDigits[j])
+                    if (Board [i,col] == possibleDigits[j])
                     {
-                        possibleDigits.Remove(Board[col,i]);
+                        possibleDigits.Remove(Board[i,col]);
                     }
                 }
             }
@@ -204,9 +204,9 @@ namespace Sudoku
                 {
                     for (int j = 0; j < possibleDigits.Count; j++)
                     {
-                        if (Board[col+x, row+y] == possibleDigits[j])
+                        if (Board[row - row % 3 + x, col - col % 3 + y] == possibleDigits[j])
                         {
-                            possibleDigits.Remove(Board[col+x, row+y]);
+                            possibleDigits.Remove(Board[row - row % 3 + x,  col - col % 3 + y ]);
                         }
                     }
                 }
