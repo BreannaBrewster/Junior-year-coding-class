@@ -6,46 +6,35 @@ namespace _Stack__Deck_of_Cards
 {
     class Deck
     {
+        Random rand = new Random();
         public List<Card> Cards { get; set; }
         List<Card> discard = new List<Card>();
         public Deck()
         {
             foreach (Suits suit in Enum.GetValues(typeof(Suits)))
             {
-                for (int i = 2; i < 11; i++)
+                foreach (Values value in Enum.GetValues(typeof(Values)))
                 {
-                    Cards.Add(new Card(suit, i.ToString()));
+                    Cards.Add(new Card(suit, value));
                 }
             }
         }
-        
-        //List<Card> discard = new List<Card>();
-        //List<Card> newDeck = new List<Card>();
-        //public Deck()
-        //{
 
-        //    for (int suit = 0; suit < 4; suit++)
-        //    {
-        //        for (int value = 0; value < 13; value++)
-        //        {
-        //            deck.Add(new Card((Suits)suit, (Values)value));
-        //        }
-        //    }
-        //}
+
         public void Shuffle()
         {
             Random rand = new Random();
             List<Card> mutatedDeck = new List<Card>();
-            //foreach(Card f in deck)
+            foreach(Card c in Cards)
+            {
+                mutatedDeck.Add(c);
+            }
+            //for(int deckLength= mutatedDeck.Count; deckLength > 1; deckLength--)
             //{
-                //newDeck[rand.Next(0, 50)] = f;
-                //mutatedDeck.Add(f);
-            //}
-            //newDeck = new List<Card>();
-            //foreach(Card c in mutatedDeck)
-            //{
-                //newDeck[rand.Next(0, 50)] = c;
-                //mutatedDeck.Remove(c);
+            //    var temp = list[i];
+            //    list[i] = list[j];
+            //    list[j] = temp;
+
             //}
             discard = new List<Card>();
         }
