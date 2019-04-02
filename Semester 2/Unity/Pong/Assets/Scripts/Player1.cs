@@ -21,13 +21,13 @@ public class Player1 : MonoBehaviour
     void Update()
     {
         velocity = rbody.velocity;
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKey(KeyCode.W) && transform.position.y < 4)
         {
-            velocity += Vector3.up * speed * Time.deltaTime;
+            transform.position += .5f * Vector3.up * Time.deltaTime * speed;
         }
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKey(KeyCode.S) && transform.position.y > -4)
         {
-            velocity += Vector3.down * speed * Time.deltaTime;
+            transform.position += .5f * Vector3.down * Time.deltaTime * speed;
         }
         rbody.velocity = new Vector3(Mathf.Clamp(velocity.x, -1f, 1f), Mathf.Clamp(velocity.y, -4f, 4f));
     }

@@ -9,8 +9,7 @@ public class Ball : MonoBehaviour {
     Rigidbody2D rbody;
     // Use this for initialization
     [SerializeField]
-    public float timer = 0.0f;
-    float speed = 2f;
+    float speed = 5f;
     void Start()
     {
         velocity = new Vector3(Random.RandomRange(-1f, 1f), Random.Range(-1f, 1f), 0);
@@ -24,24 +23,16 @@ public class Ball : MonoBehaviour {
     void Update()
     {
 
-        timer += Time.deltaTime;
-        if (timer >= 2)
-        {
-            
-            timer = 0;
-        }
-
         transform.position += velocity * Time.deltaTime * speed;
         if (transform.position.x < -6.55)
         {
-
             transform.position = new Vector3(0, 0, 0);
             velocity = new Vector3(1, Random.Range(-1f, 1f), 0);
         }
         if (transform.position.x > 6.55)
         {
             transform.position = new Vector3(0, transform.position.y, 0);
-            velocity = new Vector3(Random.RandomRange(-1f, 1f), Random.Range(-1f, 1f), 0);
+            velocity = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), 0);
         }
         if (transform.position.y > 4.7)
         {
@@ -54,6 +45,10 @@ public class Ball : MonoBehaviour {
             velocity = Vector3.Reflect(velocity, Vector3.up);
             transform.position = new Vector3(transform.position.x, -4.86f, 0);
         }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        velocity = Vector3.Reflect(velocity, Vector3.right);
     }
 }
 

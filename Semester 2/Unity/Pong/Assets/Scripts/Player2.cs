@@ -19,21 +19,14 @@ public class Player2 : MonoBehaviour {
     void Update()
     {
         velocity = rbody.velocity;
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.UpArrow) && transform.position.y < 4)
         {
-            if (transform.position.y < 3.97)
-            {
-                velocity += Vector3.up * speed * Time.deltaTime;
-            }
+            transform.position += .5f * Vector3.up * Time.deltaTime * speed;
         }
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.DownArrow)&& transform.position.y > -4)
         {
-            if(transform.position.y > -3.97)
-                {
-                velocity += Vector3.down * speed * Time.deltaTime;
-            }
+            transform.position += .5f * Vector3.down * Time.deltaTime * speed;
         }
-        velocity.Normalize();
         rbody.velocity = new Vector3(Mathf.Clamp(velocity.x, -1f, 1f), Mathf.Clamp(velocity.y, -4f, 4f));
     }
 }
