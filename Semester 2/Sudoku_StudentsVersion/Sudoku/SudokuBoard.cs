@@ -130,11 +130,11 @@ namespace Sudoku
             {
                 for (int k = 0; k < 3; k++)
                 {
-                    for (int x = 0; x < 3; x++)
+                    for (int y = 0; y < 3; y++)
                     {
-                        for (int y = 0; y < 3; y++)
+                        for (int x = 0; x < 3; x++)
                         {
-                            if (!values.Contains(Board[x+k*3, y+w*3]))
+                            if (!values.Contains(Board[x + k * 3, y + w * 3]))
                             {
                                 valid = false;
                                 break;
@@ -173,34 +173,37 @@ namespace Sudoku
         /// <returns>List of valid integers for the given row and column</returns>
         public List<int> FindLegalDigits(int row, int col)
         {
+            row=row + 1;
+            col = col + 1;
+
             //Create list of all possible digits (1-9)
             List<int> possibleDigits = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
             //Remove from the list all elements in the row
-            for(int i=0; i<9; i++)
+            for (int x = 0; x < 9; x++)
             {
                 for (int j = 0; j < possibleDigits.Count; j++)
                 {
-                    if (Board[row,i] == possibleDigits[j])
+                    if (Board[x, col] == possibleDigits[j])
                     {
-                        possibleDigits.Remove(Board[row,i]);
+                        possibleDigits.Remove(Board[x, col]);
                     }
                 }
             }
             //Remove from the list all elements in the column
-            for (int i = 0; i < 9; i++)
+            for (int y = 0; y < 9; y++)
             {
                 for (int j = 0; j < possibleDigits.Count; j++)
                 {
-                    if (Board [i,col] == possibleDigits[j])
+                    if (Board[row, y] == possibleDigits[j])
                     {
-                        possibleDigits.Remove(Board[i,col]);
+                        possibleDigits.Remove(Board[row, y]);
                     }
                 }
             }
             //remove from the list all elements in the box
-            for (int x = 0; x < 3; x++)
+            for (int y = 0; y < 3; y++)
             {
-                for (int y = 0; y < 3; y++)
+                for (int x = 0; x < 3; x++)
                 {
                     for (int j = 0; j < possibleDigits.Count; j++)
                     {
