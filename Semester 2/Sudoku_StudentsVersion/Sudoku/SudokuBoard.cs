@@ -36,6 +36,19 @@ namespace Sudoku
                 {0,4,0,0,5,0,0,3,6 },
                 {7,0,3,0,1,8,0,0,0 }};
         }
+        //public SudokuBoard()
+        //{
+        //    Board = new int[9, 9] {
+        //        {4,3,5,2,6,9,7,8,1 },
+        //        {6,8,2,5,7,1,4,9,3 },
+        //        {1,9,7,8,3,4,5,6,2 },
+        //        {8,2,6,1,9,5,3,4,7 },
+        //        {3,7,4,6,8,2,9,1,5 },
+        //        {9,5,1,7,4,3,6,2,8 },
+        //        {5,1,9,3,2,6,8,7,4 },
+        //        {2,4,8,9,5,7,1,3,6 },
+        //        {7,6,3,4,1,8,2,5,9 }};
+        //}
 
         /// <summary>
         /// Overloaded constructor for a sudokuboard that reads in a file and generates
@@ -104,6 +117,10 @@ namespace Sudoku
                         values.Remove(Board[x, y]);
                     }
                 }
+                if(values.Count !=0)
+                {
+                    valid = false;
+                }
                 values = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
             }
             //Check all rows in the board, make sure they contain ONLY values 1-9. No duplicates, no exclusions
@@ -122,19 +139,23 @@ namespace Sudoku
                         values.Remove(Board[x, y]);
                     }
                 }
+                if (values.Count != 0)
+                {
+                    valid = false;
+                }
                 values = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
             }
             values = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
             //Check all boxes in the board, make sure they contain ONLY values 1-9. No duplicates, no exclusions
-            for (int w = 0; w < 3; w++)
+            for (int k = 0; k < 3; k++)
             {
-                for (int k = 0; k < 3; k++)
+                for (int w = 0; w < 3; w++)
                 {
                     for (int y = 0; y < 3; y++)
                     {
                         for (int x = 0; x < 3; x++)
                         {
-                            if (!values.Contains(Board[x + k * 3, y + w * 3]))
+                            if (!values.Contains(Board[x, y]))
                             {
                                 valid = false;
                                 break;
@@ -144,8 +165,8 @@ namespace Sudoku
                                 values.Remove(Board[x, y]);
                             }
                         }
+                        values = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
                     }
-                    values = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
                 }
             }
             return valid;
