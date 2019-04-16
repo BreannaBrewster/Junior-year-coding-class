@@ -6,6 +6,8 @@ public class EnemyManager : MonoBehaviour
 {
     public float spawnTime = 2;
     public GameObject Enemy;
+    Vector3 enemySpawn = new Vector3(0, 1.2f, 50.76f);
+    Vector3 enemyVelocity = new Vector3(-0.2f, 0, 0);
     //public List<Vector3> spawnPoints = new List<Vector3>();
     // Use this for initialization
     void Start()
@@ -24,14 +26,17 @@ public class EnemyManager : MonoBehaviour
     void Spawn()
     {
         GameObject newEnemy = Instantiate(Enemy);
-        newEnemy.transform.position = new Vector3(0, 1.2f, 50.76f);
-        newEnemy.GetComponent<Enemy>().velocity = new Vector3(-0.2f, 0, 0);
+        newEnemy.transform.position = enemySpawn;
+        newEnemy.GetComponent<Enemy>().velocity = enemyVelocity;
     }
     private void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.tag == "Player")
         {
-            this.gameObject.transform.position = new Vector3(9, -10.52f, 35.492f);
+            this.gameObject.transform.position = new Vector3(8.92f, -10.57f, -36.24f);
+            this.transform.localScale = new Vector3(3, 2, 15);
+            enemyVelocity = new Vector3(0, 0, -0.2f);
+            enemySpawn = new Vector3(6.91f, -8.83f, 52.53f);
         }
     }
 }
