@@ -33,9 +33,9 @@ public class EnemyManager : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            this.gameObject.transform.position = new Vector3(8.92f, -10.57f, -36.24f);
+            this.gameObject.transform.position = new Vector3(8.92f, -10.57f, 52.24f);
             this.transform.localScale = new Vector3(3, 2, 15);
-            enemyVelocity = new Vector3(0, 0, -0.2f);
+            enemyVelocity = new Vector3(0, 0, 0.2f);
             enemySpawn = new Vector3(6.91f, -8.83f, 52.53f);
         }
     }

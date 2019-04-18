@@ -14,17 +14,36 @@ public class Enemy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if(transform.position.x < -5)
+        if (transform.position.y < -8.8)
         {
-            transform.position += new Vector3(Random.Range(0, 6), 0, -5) * Time.deltaTime * speed;
-        }
-        if(transform.position.x > 5)
-        {
-            transform.position += new Vector3(Random.Range(-5, 1), 0, -5) * Time.deltaTime * speed;
+            if (transform.position.z < 45.68)
+            {
+                transform.position += new Vector3(-5, 0, Random.Range(0, 6)) * Time.deltaTime * speed;
+            }
+            if (transform.position.z > 59.02)
+            {
+                transform.position += new Vector3(-5, 0, Random.Range(-5, 1)) * Time.deltaTime * speed;
+            }
+            else
+            {
+                transform.position += new Vector3(-5, 0, Random.Range(-5, 6)) * Time.deltaTime * speed;
+            }
+            speed = 3;
         }
         else
         {
-            transform.position += new Vector3(Random.Range(-5, 6), 0, -5) * Time.deltaTime * speed;
+            if (transform.position.x < -5)
+            {
+                transform.position += new Vector3(Random.Range(0, 6), 0, -5) * Time.deltaTime * speed;
+            }
+            if (transform.position.x > 5)
+            {
+                transform.position += new Vector3(Random.Range(-5, 1), 0, -5) * Time.deltaTime * speed;
+            }
+            else
+            {
+                transform.position += new Vector3(Random.Range(-5, 6), 0, -5) * Time.deltaTime * speed;
+            }
         }
     }
 }

@@ -13,5 +13,9 @@ public class Camera : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         transform.position = player.transform.position + offset;
+        if(player.transform.position.y <-8.8)
+        {
+            gameObject.transform.position = new Vector3();
+        }
 	}
 }
