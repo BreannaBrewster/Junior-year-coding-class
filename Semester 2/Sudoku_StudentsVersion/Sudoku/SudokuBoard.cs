@@ -18,7 +18,7 @@ namespace Sudoku
         /// <summary>
         /// The data structure used to hold board data.
         /// </summary>
-        public int[,] Board { get; set; }
+        public int[,] Board { get; set; } = new int[9, 9]; //Fixes a null reference error when using copy constructor
 
         /// <summary>
         /// Defualt constructor for a sudokuboard. Randomly generates solvable boards.
@@ -76,23 +76,27 @@ namespace Sudoku
         public SudokuBoard(SudokuBoard curboard)//string fileName)
         {
             Array.Copy(curboard.Board, this.Board, this.Board.Length);
-            int x = 0;
-            int y = 0;
-            StreamReader file = new System.IO.StreamReader(AppDomain.CurrentDomain.BaseDirectory + @"HardPuzzles.txt");
-            foreach (char c in file.ReadLine().ToCharArray())
-            {
-                if (x != 8)
-                {
-                    Board[x, y] = int.Parse(c.ToString());
-                    x++;
-                }
-                else
-                {
-                    x = 0;
-                    y++;
-                }
+            //Copy constructor should only copy the current board. I'm not sure why you had all this other stuff
+            //For the hard puzzles file, create another constructor with the following header
+            //public SudokuBoard(string fileName) {}
 
-            }
+            //int x = 0;
+            //int y = 0;
+            //StreamReader file = new System.IO.StreamReader(AppDomain.CurrentDomain.BaseDirectory + @"HardPuzzles.txt");
+            //foreach (char c in file.ReadLine().ToCharArray())
+            //{
+            //    if (x != 8)
+            //    {
+            //        Board[x, y] = int.Parse(c.ToString());
+            //        x++;
+            //    }
+            //    else
+            //    {
+            //        x = 0;
+            //        y++;
+            //    }
+
+            //}
             //throw new NotImplementedException();
         }
 

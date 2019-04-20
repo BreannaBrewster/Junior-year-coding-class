@@ -180,48 +180,58 @@ namespace Sudoku
         public static bool SolveBoardIterativelyWithQueue(ref SudokuBoard board)
         {
             Queue<SudokuBoard> boards = new Queue<SudokuBoard>();
-            List<SudokuBoard> removedBoards = new List<SudokuBoard>();
-            SudokuBoard tempBoard = board;
+            //List<SudokuBoard> removedBoards = new List<SudokuBoard>();//What is this list for?
+            //SudokuBoard tempBoard = board; //This variable is never used after this point.
             boards.Enqueue(board);
-            bool solved = false;
+            //bool solved = false; //Don't need a variable here. When you return, it will return out of the while loop instantly
             while (boards.Count > 0)
             {
-                for (int i = 0; i < boards.Count; i++)
-                {
-                    removedBoards.Add(boards.Dequeue());
-                    foreach (SudokuBoard s in removedBoards)
-                    {
-                        if (s.VerifyBoard() == true)
-                        {
-                            board = removedBoards[i];
-                            solved = true;
+                //for (int i = 0; i < boards.Count; i++)
+                //{
+                //    removedBoards.Add(boards.Dequeue()); //You need to store what you dequeue from the board
+                SudokuBoard tempBoard = boards.Dequeue();
+                //    foreach (SudokuBoard s in removedBoards)
+                //    {
+                        if (tempBoard.VerifyBoard() == true) //We only want to check one board every update, specifically the one board we are considering.
+                        {                                    //The way you had it was checking every board which is very very expensive!
+                            //board = removedBoards[i];
+                            board = tempBoard;
+                            //solved = true;
+                            return true; //Just return true!
                         }
-                    }
-                }
+                    //}
+                //}
                 for (int y=0; y<9; y++)
                 {
                     for (int x = 0; x < 9; x++)
                     {
-                        if (board.Board[x, y] == 0)
+                        if (tempBoard.Board[x, y] == 0) //Common mistake, you want to look at tempBoard, not your original board
                         {
-                            foreach (SudokuBoard s in removedBoards)
-                            {
-                                foreach (int i in s.FindLegalDigits(x,y))
+                            //foreach (SudokuBoard s in removedBoards)
+                            //{
+                                foreach (int i in tempBoard.FindLegalDigits(x,y))
                                 {
-                                    //enqueues only the board with the last inputed legal digits NOT every new board
-                                    Console.WriteLine(x + "," + y + " legal digit" + i);
-                                    s.Board[x, y] = i;
-                                    s.PrintBoard();
-                                    Console.WriteLine();
-                                    boards.Enqueue(s);
+                                //enqueues only the board with the last inputed legal digits NOT every new board
+                                //Console.WriteLine(x + "," + y + " legal digit" + i); //Console.writeline is actually expensive, especially if you call it millions of times!
+                                //s.Board[x, y] = i;
+                                //s.PrintBoard();
+                                //Console.WriteLine(); //Expensive!
+                                //boards.Enqueue(s);
+
+                                //You have the right idea above, here is the right way.
+                                SudokuBoard copiedBoard = new SudokuBoard(tempBoard); //Using our copy constructor in SudokuBoard.cs
+                                copiedBoard.Board[x, y] = i; //Set the value
+                                boards.Enqueue(copiedBoard); //Put the copied board on the queue
                                 }
-                            }
+                                //TODO: At this point, we know we found the first empty space in the board, so I don't want to search for any other (on this specific board).
+                                //Use a boolean to get out of the for loops we are currently in (the x and y for loops) so we can continue to the next iteration of the while loop.
+                            //}
                         }
                     }
                 }
             }
 
-            return solved;
+            return false; //If we get to this point, we have not found a solution (likely due to bug)
             //throw new NotImplementedException();
 
             //As long as there is a board in the queue, do the following:
