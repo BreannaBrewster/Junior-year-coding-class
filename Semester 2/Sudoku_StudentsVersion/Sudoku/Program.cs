@@ -143,30 +143,30 @@ namespace Sudoku
         {
             int row, col;
         GetRow:
-            Console.WriteLine("Enter the row that you want to check (1-9)");
+            Console.WriteLine("Enter the row that you want to check (0-8)");
             int userInput;
-            if (!int.TryParse(Console.ReadLine(), out userInput) || userInput < 1 || userInput > 9)
+            if (!int.TryParse(Console.ReadLine(), out userInput) || userInput < 0 || userInput > 9)
             {
                 Console.WriteLine("You have entered an incorrect input. Please try again.");
 
                 goto GetRow;
             }
-            row = userInput;
+            row = userInput+1;
 
         GetCol:
-            Console.WriteLine("Enter the col that you want to place (1-9)");
-            if (!int.TryParse(Console.ReadLine(), out userInput) || userInput < 1 || userInput > 9)
+            Console.WriteLine("Enter the col that you want to place (0-8)");
+            if (!int.TryParse(Console.ReadLine(), out userInput) || userInput < 0 || userInput > 9)
             {
                 Console.WriteLine("You have entered an incorrect input. Please try again.");
 
                 goto GetCol;
             }
-            col = userInput;
+            col = userInput+1;
 
             Console.WriteLine();
             foreach (int validVal in board.FindLegalDigits(row - 1, col - 1))
             {
-                Console.WriteLine(validVal + " is a legal digit for row " + row + " and column " + col);
+                Console.WriteLine(validVal + " is a legal digit for row " + (row-1) + " and column " + (col-1));
             }
             Console.WriteLine();
         }
@@ -180,15 +180,57 @@ namespace Sudoku
         public static bool SolveBoardIterativelyWithQueue(ref SudokuBoard board)
         {
             Queue<SudokuBoard> boards = new Queue<SudokuBoard>();
-            throw new NotImplementedException();
+            List<SudokuBoard> removedBoards = new List<SudokuBoard>();
+            SudokuBoard tempBoard = board;
+            boards.Enqueue(board);
+            bool solved = false;
+            while (boards.Count > 0)
+            {
+                for (int i = 0; i < boards.Count; i++)
+                {
+                    removedBoards.Add(boards.Dequeue());
+                    foreach (SudokuBoard s in removedBoards)
+                    {
+                        if (s.VerifyBoard() == true)
+                        {
+                            board = removedBoards[i];
+                            solved = true;
+                        }
+                    }
+                }
+                for (int y=0; y<9; y++)
+                {
+                    for (int x = 0; x < 9; x++)
+                    {
+                        if (board.Board[x, y] == 0)
+                        {
+                            foreach (SudokuBoard s in removedBoards)
+                            {
+                                foreach (int i in s.FindLegalDigits(x,y))
+                                {
+                                    //enqueues only the board with the last inputed legal digits NOT every new board
+                                    Console.WriteLine(x + "," + y + " legal digit" + i);
+                                    s.Board[x, y] = i;
+                                    s.PrintBoard();
+                                    Console.WriteLine();
+                                    boards.Enqueue(s);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            return solved;
+            //throw new NotImplementedException();
 
             //As long as there is a board in the queue, do the following:
-                //dequeue from the queue and store the returned value
-                //if the returned value is complete
-                    //apply board to our ref parameter and return true
-                //Find the first blank space "0" on the board
-                    //FindLegalDigits() on that space
-                        //Enqueue a new board for each legal digit found (make sure to put that digit on the new board!)
+            //dequeue from the queue and store the returned value
+            //if the returned value is complete
+            //apply board to our ref parameter and return true
+            //Find the first blank space "0" on the board
+            //FindLegalDigits() on that space
+            //Enqueue a new board for each legal digit found (make sure to put that digit on the new board!)
         }
     }
 }
