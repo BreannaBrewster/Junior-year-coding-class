@@ -76,27 +76,37 @@ namespace Sudoku
         public SudokuBoard(SudokuBoard curboard)//string fileName)
         {
             Array.Copy(curboard.Board, this.Board, this.Board.Length);
-            //Copy constructor should only copy the current board. I'm not sure why you had all this other stuff
-            //For the hard puzzles file, create another constructor with the following header
-            //public SudokuBoard(string fileName) {}
+        }
+        //Copy constructor should only copy the current board. I'm not sure why you had all this other stuff
+        //For the hard puzzles file, create another constructor with the following header
+        public SudokuBoard(string fileName)
+        {
+            List<SudokuBoard> hardPuzzles = new List<SudokuBoard>();
+            StreamReader file = new System.IO.StreamReader(AppDomain.CurrentDomain.BaseDirectory + @fileName);
+            //StreamReader file = new System.IO.StreamReader(fileName);
+            string s = "";
+            while ((s = file.ReadLine()) != null)
+            {
+                SudokuBoard newBoard = new SudokuBoard();
+               char[] c = s.ToCharArray();
+                int y = 0;
+                
+                for(int x=0;x< s.Length;x++)
+                {
+                    if (x <= 9)
+                    {
+                        newBoard.Board[x, y] = c[x+(9*y)];
+                        x++;
+                    }
+                    else
+                    {
+                        x = 0;
+                        y++;
+                    }
 
-            //int x = 0;
-            //int y = 0;
-            //StreamReader file = new System.IO.StreamReader(AppDomain.CurrentDomain.BaseDirectory + @"HardPuzzles.txt");
-            //foreach (char c in file.ReadLine().ToCharArray())
-            //{
-            //    if (x != 8)
-            //    {
-            //        Board[x, y] = int.Parse(c.ToString());
-            //        x++;
-            //    }
-            //    else
-            //    {
-            //        x = 0;
-            //        y++;
-            //    }
-
-            //}
+                }
+                hardPuzzles.Add(newBoard);
+            }
             //throw new NotImplementedException();
         }
 
