@@ -14,24 +14,47 @@ public class Player : MonoBehaviour {
         //rb.useGravity = false;
         //rb.AddForce(0, 200, 500*time.DeltaTime);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-        if(Input.GetKey(KeyCode.W)){
-            rb.AddForce(0, 0, speed);
-        }
-        if (Input.GetKey(KeyCode.D))
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (transform.position.y < -8)
         {
-            rb.AddForce(speed, 0, 0);
+            if (Input.GetKey(KeyCode.A))
+            {
+                rb.AddForce(0, 0, speed);
+            }
+            if (Input.GetKey(KeyCode.W))
+            {
+                rb.AddForce(speed, 0, 0);
+            }
+            if (Input.GetKey(KeyCode.S))
+            {
+                rb.AddForce(-speed, 0, 0);
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                rb.AddForce(0, 0, -speed);
+            }
         }
-        if (Input.GetKey(KeyCode.A))
+        else
         {
-            rb.AddForce(-speed, 0, 0);
+            if (Input.GetKey(KeyCode.W))
+            {
+                rb.AddForce(0, 0, speed);
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                rb.AddForce(speed, 0, 0);
+            }
+            if (Input.GetKey(KeyCode.A))
+            {
+                rb.AddForce(-speed, 0, 0);
+            }
+            if (Input.GetKey(KeyCode.S))
+            {
+                rb.AddForce(0, 0, -speed);
+            }
         }
-        if(Input.GetKey(KeyCode.S))
-        {
-            rb.AddForce(0,0,-speed);
-        }
-}
-    
+    }
 }

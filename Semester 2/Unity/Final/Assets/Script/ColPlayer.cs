@@ -20,7 +20,7 @@ public class ColPlayer : MonoBehaviour {
         { 
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-        if(col.gameObject.name == "cover")
+        if(col.gameObject.tag == "Cover")
         {
             Destroy(this.gameObject);
         }
