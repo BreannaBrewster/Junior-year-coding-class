@@ -24,5 +24,9 @@ public class ColPlayer : MonoBehaviour {
         {
             Destroy(this.gameObject);
         }
+        if(col.gameObject.name == "Change Scene1")
+        {
+            SceneManager.LoadScene("Scene2");
+        }
     }
 }

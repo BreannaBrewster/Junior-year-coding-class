@@ -19,8 +19,8 @@ public class EnemyManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
-        if (timer > 1000000000)
+        timer++;
+        if (timer > 100)
         {
             if (spawnTime > spawnTime * .000001)
             {
