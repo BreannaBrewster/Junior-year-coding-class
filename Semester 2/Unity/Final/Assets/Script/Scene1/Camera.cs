@@ -27,7 +27,7 @@ public class Camera : MonoBehaviour {
                 rotateTimes++;
                 gameObject.transform.position = new Vector3(transform.position.x - 8, transform.position.y, transform.position.z + 3);
                 offset = transform.position - player.transform.position;
-                transform.RotateAround(Vector3.up, player.transform.position.y - 89.8f);
+                transform.Rotate(Vector3.up, player.transform.position.y - 89.8f);
             }
         }
         else if(this.gameObject.name == "Camera")

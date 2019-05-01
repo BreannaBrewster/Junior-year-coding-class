@@ -21,81 +21,81 @@ public class PlayerScn2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (transform.position.x < -5.7)
-        //{
-        //    if (Input.GetKey(KeyCode.A))
-        //    {
-        //        rb.AddForce(0, 0, speed);
-        //    }
-        //    if (Input.GetKey(KeyCode.D))
-        //    {
-        //        rb.AddForce(speed, 0, 0);
-        //    }
-        //    if (Input.GetKey(KeyCode.S))
-        //    {
-        //        rb.AddForce(-speed, 0, 0);
-        //    }
-        //    if (Input.GetKey(KeyCode.W))
-        //    {
-        //        rb.AddForce(0, 0, -speed);
-        //    }
-        //}
-        //if (transform.position.z < 56.6)
-        //{
-        //    if (Input.GetKey(KeyCode.A))
-        //    {
-        //        rb.AddForce(0, 0, speed);
-        //    }
-        //    if (Input.GetKey(KeyCode.W))
-        //    {
-        //        rb.AddForce(speed, 0, 0);
-        //    }
-        //    if (Input.GetKey(KeyCode.S))
-        //    {
-        //        rb.AddForce(-speed, 0, 0);
-        //    }
-        //    if (Input.GetKey(KeyCode.D))
-        //    {
-        //        rb.AddForce(0, 0, -speed);
-        //    }
-        //}
-        if (transform.position.x > -73.5)
-        {
-            if (Input.GetKey(KeyCode.S))
+            //if (transform.position.x < -5.7)
+            //{
+            //    if (Input.GetKey(KeyCode.A))
+            //    {
+            //        rb.AddForce(0, 0, speed);
+            //    }
+            //    if (Input.GetKey(KeyCode.D))
+            //    {
+            //        rb.AddForce(speed, 0, 0);
+            //    }
+            //    if (Input.GetKey(KeyCode.S))
+            //    {
+            //        rb.AddForce(-speed, 0, 0);
+            //    }
+            //    if (Input.GetKey(KeyCode.W))
+            //    {
+            //        rb.AddForce(0, 0, -speed);
+            //    }
+            //}
+            //if (transform.position.z < 56.6)
+            //{
+            //    if (Input.GetKey(KeyCode.A))
+            //    {
+            //        rb.AddForce(0, 0, speed);
+            //    }
+            //    if (Input.GetKey(KeyCode.W))
+            //    {
+            //        rb.AddForce(speed, 0, 0);
+            //    }
+            //    if (Input.GetKey(KeyCode.S))
+            //    {
+            //        rb.AddForce(-speed, 0, 0);
+            //    }
+            //    if (Input.GetKey(KeyCode.D))
+            //    {
+            //        rb.AddForce(0, 0, -speed);
+            //    }
+            //}
+            if (transform.position.z > 121.9 && transform.position.x > -88.5)
             {
-                rb.AddForce(0, 0, speed);
-            }
-            if (Input.GetKey(KeyCode.W))
+                if (Input.GetKey(KeyCode.A))
+                {
+                    rb.AddForce(0, 0, speed);
+                }
+                if (Input.GetKey(KeyCode.W))
+                {
+                    rb.AddForce(speed, 0, 0);
+                }
+                if (Input.GetKey(KeyCode.S))
+                {
+                    rb.AddForce(-speed, 0, 0);
+                }
+                if (Input.GetKey(KeyCode.D))
+                {
+                    rb.AddForce(0, 0, -speed);
+                }
+            if (transform.position.z < 137.5 && transform.position.z > 45 && transform.position.x > -13.7)
             {
-                rb.AddForce(speed, 0, 0);
-            }
-            if (Input.GetKey(KeyCode.D))
-            {
-                rb.AddForce(-speed, 0, 0);
-            }
-            if (Input.GetKey(KeyCode.A))
-            {
-                rb.AddForce(0, 0, -speed);
+                if (Input.GetKey(KeyCode.S))
+                {
+                    rb.AddForce(0, 0, speed);
+                }
+                if (Input.GetKey(KeyCode.A))
+                {
+                    rb.AddForce(speed, 0, 0);
+                }
+                if (Input.GetKey(KeyCode.D))
+                {
+                    rb.AddForce(-speed, 0, 0);
+                }
+                if (Input.GetKey(KeyCode.W))
+                {
+                    rb.AddForce(0, 0, -speed);
+                }
             }
         }
-        //if (transform.position.z > 125.3)
-        //{
-        //    if (Input.GetKey(KeyCode.A))
-        //    {
-        //        rb.AddForce(0, 0, speed);
-        //    }
-        //    if (Input.GetKey(KeyCode.W))
-        //    {
-        //        rb.AddForce(speed, 0, 0);
-        //    }
-        //    if (Input.GetKey(KeyCode.S))
-        //    {
-        //        rb.AddForce(-speed, 0, 0);
-        //    }
-        //    if (Input.GetKey(KeyCode.D))
-        //    {
-        //        rb.AddForce(0, 0, -speed);
-        //    }
-        //}
     }
 }
