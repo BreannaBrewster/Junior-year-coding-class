@@ -7,38 +7,43 @@ public class CameraScn2 : MonoBehaviour {
     public GameObject player;
     private Vector3 offset;
 
-    public int turn=0;
+    public int turn=1;
     public float degree;
     // Use this for initialization
     void Start () {
         offset = transform.position - player.transform.position;
-        playerLocation = player.transform.position + transform.position;
-        
+        playerLocation = player.transform.position;
     }
 	
 	// Update is called once per frame
 	void Update () {
         Vector3 rotation = transform.eulerAngles;
         transform.position = player.transform.position + offset;
-        playerLocation = player.transform.position + transform.position;
-        if (playerLocation.x > -10.7 && playerLocation.z > 122.9)
+        playerLocation = player.transform.position;
+        if (playerLocation.x > -11 && playerLocation.z > 122)
         {
-            if (turn == 0)
+            if (turn%2 != 0 && turn%3 !=0)
             {
-                //if (this.gameObject.name == "Main Camera2")
-                //{
-                //    this.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 40);
-                //}
-                //rotation.y = 180;
-                //transform.eulerAngles = rotation;
-                transform.Rotate(Vector3.up, 30);
-                turn =1;
+                transform.position = new Vector3(playerLocation.x, transform.position.y, transform.position.z + 5);
+                offset = transform.position - player.transform.position;
+                rotation.y = 170;
+                rotation.z = -9;
+                transform.eulerAngles = rotation;
+                turn++;
             }
         }
-        //if (playerLookingAt.z< 56.6&&playerLookingAt.z> 140.1&& playerLookingAt.x > -10.8)
-        //{
-        //    transform.RotateAround(Vector3.up, player.transform.position.y - 89.8f);
-        //}
+        if (playerLocation.z < 60 && playerLocation.x <3)
+        {
+            if (turn % 2 == 0)
+            {
+                transform.position = new Vector3(transform.position.x + 11, transform.position.y, transform.position.z - 5);
+                offset = transform.position - player.transform.position;
+                rotation.y = -95;
+                rotation.z = -9;
+                transform.eulerAngles = rotation;
+                turn++;
+            }
+        }
         //else if(playerLookingAt.x < -68.7)
         //{
         //    transform.RotateAround(Vector3.up, player.transform.position.y - 89.8f);
