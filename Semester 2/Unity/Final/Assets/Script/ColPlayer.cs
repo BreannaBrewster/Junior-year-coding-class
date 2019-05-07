@@ -16,7 +16,7 @@ public class ColPlayer : MonoBehaviour {
 	}
     private void OnCollisionEnter(Collision col)
     {
-        if(col.gameObject.tag == "Player")
+        if(col.gameObject.tag == "Player" && col.gameObject.name != "Restart Catch Block")
         { 
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
@@ -27,6 +27,10 @@ public class ColPlayer : MonoBehaviour {
         if(col.gameObject.name == "Change Scene1")
         {
             SceneManager.LoadScene("Scene2");
+        }
+        if(col.gameObject.name == "Restart Catch Block")
+        {
+            col.transform.position = new Vector3(-69, 47, 133);
         }
     }
 }
