@@ -1,0 +1,11 @@
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\LINQ - LAMDA expressions\LINQ - LAMDA expressions\bin\Debug\netcoreapp2.1\LINQ - LAMDA expressions.deps.json
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\LINQ - LAMDA expressions\LINQ - LAMDA expressions\bin\Debug\netcoreapp2.1\LINQ - LAMDA expressions.runtimeconfig.json
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\LINQ - LAMDA expressions\LINQ - LAMDA expressions\bin\Debug\netcoreapp2.1\LINQ - LAMDA expressions.runtimeconfig.dev.json
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\LINQ - LAMDA expressions\LINQ - LAMDA expressions\bin\Debug\netcoreapp2.1\LINQ - LAMDA expressions.dll
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\LINQ - LAMDA expressions\LINQ - LAMDA expressions\bin\Debug\netcoreapp2.1\LINQ - LAMDA expressions.pdb
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\LINQ - LAMDA expressions\LINQ - LAMDA expressions\obj\Debug\netcoreapp2.1\LINQ - LAMDA expressions.csproj.CoreCompileInputs.cache
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\LINQ - LAMDA expressions\LINQ - LAMDA expressions\obj\Debug\netcoreapp2.1\LINQ - LAMDA expressions.AssemblyInfoInputs.cache
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\LINQ - LAMDA expressions\LINQ - LAMDA expressions\obj\Debug\netcoreapp2.1\LINQ - LAMDA expressions.AssemblyInfo.cs
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\LINQ - LAMDA expressions\LINQ - LAMDA expressions\obj\Debug\netcoreapp2.1\LINQ - LAMDA expressions.dll
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\LINQ - LAMDA expressions\LINQ - LAMDA expressions\obj\Debug\netcoreapp2.1\LINQ - LAMDA expressions.pdb
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\LINQ - LAMDA expressions\LINQ - LAMDA expressions\obj\Debug\netcoreapp2.1\LINQ - LAMDA expressions.csprojAssemblyReference.cache

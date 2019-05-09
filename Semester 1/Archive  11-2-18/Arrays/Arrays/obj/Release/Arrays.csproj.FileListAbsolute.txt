@@ -1,0 +1,6 @@
+C:\Users\186741\OneDrive - Academy District 20\Arrays\Arrays\bin\Release\Arrays.exe.config
+C:\Users\186741\OneDrive - Academy District 20\Arrays\Arrays\bin\Release\Arrays.exe
+C:\Users\186741\OneDrive - Academy District 20\Arrays\Arrays\bin\Release\Arrays.pdb
+C:\Users\186741\OneDrive - Academy District 20\Arrays\Arrays\obj\Release\Arrays.csproj.CoreCompileInputs.cache
+C:\Users\186741\OneDrive - Academy District 20\Arrays\Arrays\obj\Release\Arrays.exe
+C:\Users\186741\OneDrive - Academy District 20\Arrays\Arrays\obj\Release\Arrays.pdb

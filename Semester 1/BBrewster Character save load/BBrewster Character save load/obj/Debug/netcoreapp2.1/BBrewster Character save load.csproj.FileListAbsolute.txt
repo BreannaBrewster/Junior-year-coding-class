@@ -1,0 +1,11 @@
+C:\Users\186741\Documents\Junior-year-coding-class\BBrewster Character save load\BBrewster Character save load\bin\Debug\netcoreapp2.1\BBrewster Character save load.deps.json
+C:\Users\186741\Documents\Junior-year-coding-class\BBrewster Character save load\BBrewster Character save load\bin\Debug\netcoreapp2.1\BBrewster Character save load.runtimeconfig.json
+C:\Users\186741\Documents\Junior-year-coding-class\BBrewster Character save load\BBrewster Character save load\bin\Debug\netcoreapp2.1\BBrewster Character save load.runtimeconfig.dev.json
+C:\Users\186741\Documents\Junior-year-coding-class\BBrewster Character save load\BBrewster Character save load\bin\Debug\netcoreapp2.1\BBrewster Character save load.dll
+C:\Users\186741\Documents\Junior-year-coding-class\BBrewster Character save load\BBrewster Character save load\bin\Debug\netcoreapp2.1\BBrewster Character save load.pdb
+C:\Users\186741\Documents\Junior-year-coding-class\BBrewster Character save load\BBrewster Character save load\obj\Debug\netcoreapp2.1\BBrewster Character save load.csproj.CoreCompileInputs.cache
+C:\Users\186741\Documents\Junior-year-coding-class\BBrewster Character save load\BBrewster Character save load\obj\Debug\netcoreapp2.1\BBrewster Character save load.AssemblyInfoInputs.cache
+C:\Users\186741\Documents\Junior-year-coding-class\BBrewster Character save load\BBrewster Character save load\obj\Debug\netcoreapp2.1\BBrewster Character save load.AssemblyInfo.cs
+C:\Users\186741\Documents\Junior-year-coding-class\BBrewster Character save load\BBrewster Character save load\obj\Debug\netcoreapp2.1\BBrewster Character save load.dll
+C:\Users\186741\Documents\Junior-year-coding-class\BBrewster Character save load\BBrewster Character save load\obj\Debug\netcoreapp2.1\BBrewster Character save load.pdb
+C:\Users\186741\Documents\Junior-year-coding-class\BBrewster Character save load\BBrewster Character save load\obj\Debug\netcoreapp2.1\BBrewster Character save load.csprojAssemblyReference.cache

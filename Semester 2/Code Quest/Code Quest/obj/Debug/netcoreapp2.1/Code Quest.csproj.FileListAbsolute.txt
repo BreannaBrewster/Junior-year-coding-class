@@ -1,0 +1,11 @@
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Code Quest\Code Quest\bin\Debug\netcoreapp2.1\Code Quest.deps.json
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Code Quest\Code Quest\bin\Debug\netcoreapp2.1\Code Quest.runtimeconfig.json
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Code Quest\Code Quest\bin\Debug\netcoreapp2.1\Code Quest.runtimeconfig.dev.json
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Code Quest\Code Quest\bin\Debug\netcoreapp2.1\Code Quest.dll
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Code Quest\Code Quest\bin\Debug\netcoreapp2.1\Code Quest.pdb
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Code Quest\Code Quest\obj\Debug\netcoreapp2.1\Code Quest.csprojAssemblyReference.cache
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Code Quest\Code Quest\obj\Debug\netcoreapp2.1\Code Quest.csproj.CoreCompileInputs.cache
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Code Quest\Code Quest\obj\Debug\netcoreapp2.1\Code Quest.AssemblyInfoInputs.cache
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Code Quest\Code Quest\obj\Debug\netcoreapp2.1\Code Quest.AssemblyInfo.cs
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Code Quest\Code Quest\obj\Debug\netcoreapp2.1\Code Quest.dll
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Code Quest\Code Quest\obj\Debug\netcoreapp2.1\Code Quest.pdb

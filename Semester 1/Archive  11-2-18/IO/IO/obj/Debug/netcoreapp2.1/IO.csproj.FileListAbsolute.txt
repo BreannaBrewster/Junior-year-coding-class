@@ -1,0 +1,11 @@
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\IO\IO\bin\Debug\netcoreapp2.1\IO.deps.json
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\IO\IO\bin\Debug\netcoreapp2.1\IO.runtimeconfig.json
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\IO\IO\bin\Debug\netcoreapp2.1\IO.runtimeconfig.dev.json
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\IO\IO\bin\Debug\netcoreapp2.1\IO.dll
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\IO\IO\bin\Debug\netcoreapp2.1\IO.pdb
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\IO\IO\obj\Debug\netcoreapp2.1\IO.csprojAssemblyReference.cache
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\IO\IO\obj\Debug\netcoreapp2.1\IO.csproj.CoreCompileInputs.cache
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\IO\IO\obj\Debug\netcoreapp2.1\IO.AssemblyInfoInputs.cache
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\IO\IO\obj\Debug\netcoreapp2.1\IO.AssemblyInfo.cs
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\IO\IO\obj\Debug\netcoreapp2.1\IO.dll
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\IO\IO\obj\Debug\netcoreapp2.1\IO.pdb

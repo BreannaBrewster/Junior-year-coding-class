@@ -1,0 +1,11 @@
+C:\Users\186741\OneDrive - Academy District 20\B.Brewster_Caesar Cipher\B.Brewster_Caesar Cipher\bin\Debug\netcoreapp2.1\B.Brewster_Caesar Cipher.deps.json
+C:\Users\186741\OneDrive - Academy District 20\B.Brewster_Caesar Cipher\B.Brewster_Caesar Cipher\bin\Debug\netcoreapp2.1\B.Brewster_Caesar Cipher.runtimeconfig.json
+C:\Users\186741\OneDrive - Academy District 20\B.Brewster_Caesar Cipher\B.Brewster_Caesar Cipher\bin\Debug\netcoreapp2.1\B.Brewster_Caesar Cipher.runtimeconfig.dev.json
+C:\Users\186741\OneDrive - Academy District 20\B.Brewster_Caesar Cipher\B.Brewster_Caesar Cipher\bin\Debug\netcoreapp2.1\B.Brewster_Caesar Cipher.dll
+C:\Users\186741\OneDrive - Academy District 20\B.Brewster_Caesar Cipher\B.Brewster_Caesar Cipher\bin\Debug\netcoreapp2.1\B.Brewster_Caesar Cipher.pdb
+C:\Users\186741\OneDrive - Academy District 20\B.Brewster_Caesar Cipher\B.Brewster_Caesar Cipher\obj\Debug\netcoreapp2.1\B.Brewster_Caesar Cipher.csprojAssemblyReference.cache
+C:\Users\186741\OneDrive - Academy District 20\B.Brewster_Caesar Cipher\B.Brewster_Caesar Cipher\obj\Debug\netcoreapp2.1\B.Brewster_Caesar Cipher.csproj.CoreCompileInputs.cache
+C:\Users\186741\OneDrive - Academy District 20\B.Brewster_Caesar Cipher\B.Brewster_Caesar Cipher\obj\Debug\netcoreapp2.1\B.Brewster_Caesar Cipher.AssemblyInfoInputs.cache
+C:\Users\186741\OneDrive - Academy District 20\B.Brewster_Caesar Cipher\B.Brewster_Caesar Cipher\obj\Debug\netcoreapp2.1\B.Brewster_Caesar Cipher.AssemblyInfo.cs
+C:\Users\186741\OneDrive - Academy District 20\B.Brewster_Caesar Cipher\B.Brewster_Caesar Cipher\obj\Debug\netcoreapp2.1\B.Brewster_Caesar Cipher.dll
+C:\Users\186741\OneDrive - Academy District 20\B.Brewster_Caesar Cipher\B.Brewster_Caesar Cipher\obj\Debug\netcoreapp2.1\B.Brewster_Caesar Cipher.pdb

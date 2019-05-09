@@ -1,0 +1,10 @@
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Winforms\Winforms\bin\Debug\Winforms.exe.config
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Winforms\Winforms\bin\Debug\Winforms.exe
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Winforms\Winforms\bin\Debug\Winforms.pdb
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Winforms\Winforms\obj\Debug\Winforms.csprojAssemblyReference.cache
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Winforms\Winforms\obj\Debug\Winforms.Form1.resources
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Winforms\Winforms\obj\Debug\Winforms.Properties.Resources.resources
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Winforms\Winforms\obj\Debug\Winforms.csproj.GenerateResource.cache
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Winforms\Winforms\obj\Debug\Winforms.csproj.CoreCompileInputs.cache
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Winforms\Winforms\obj\Debug\Winforms.exe
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Winforms\Winforms\obj\Debug\Winforms.pdb

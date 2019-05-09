@@ -1,0 +1,10 @@
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\B.Brewster TicTacToe\B.Brewster TicTacToe\bin\Debug\netcoreapp2.1\B.Brewster TicTacToe.deps.json
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\B.Brewster TicTacToe\B.Brewster TicTacToe\bin\Debug\netcoreapp2.1\B.Brewster TicTacToe.runtimeconfig.json
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\B.Brewster TicTacToe\B.Brewster TicTacToe\bin\Debug\netcoreapp2.1\B.Brewster TicTacToe.runtimeconfig.dev.json
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\B.Brewster TicTacToe\B.Brewster TicTacToe\bin\Debug\netcoreapp2.1\B.Brewster TicTacToe.dll
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\B.Brewster TicTacToe\B.Brewster TicTacToe\bin\Debug\netcoreapp2.1\B.Brewster TicTacToe.pdb
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\B.Brewster TicTacToe\B.Brewster TicTacToe\obj\Debug\netcoreapp2.1\B.Brewster TicTacToe.csproj.CoreCompileInputs.cache
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\B.Brewster TicTacToe\B.Brewster TicTacToe\obj\Debug\netcoreapp2.1\B.Brewster TicTacToe.AssemblyInfoInputs.cache
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\B.Brewster TicTacToe\B.Brewster TicTacToe\obj\Debug\netcoreapp2.1\B.Brewster TicTacToe.AssemblyInfo.cs
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\B.Brewster TicTacToe\B.Brewster TicTacToe\obj\Debug\netcoreapp2.1\B.Brewster TicTacToe.dll
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\B.Brewster TicTacToe\B.Brewster TicTacToe\obj\Debug\netcoreapp2.1\B.Brewster TicTacToe.pdb

@@ -1,0 +1,11 @@
+F:\B.Brewster_Palandrome\B.Brewster_Palandrome\bin\Debug\netcoreapp2.1\B.Brewster_Palandrome.deps.json
+F:\B.Brewster_Palandrome\B.Brewster_Palandrome\bin\Debug\netcoreapp2.1\B.Brewster_Palandrome.runtimeconfig.json
+F:\B.Brewster_Palandrome\B.Brewster_Palandrome\bin\Debug\netcoreapp2.1\B.Brewster_Palandrome.runtimeconfig.dev.json
+F:\B.Brewster_Palandrome\B.Brewster_Palandrome\bin\Debug\netcoreapp2.1\B.Brewster_Palandrome.dll
+F:\B.Brewster_Palandrome\B.Brewster_Palandrome\bin\Debug\netcoreapp2.1\B.Brewster_Palandrome.pdb
+F:\B.Brewster_Palandrome\B.Brewster_Palandrome\obj\Debug\netcoreapp2.1\B.Brewster_Palandrome.csprojAssemblyReference.cache
+F:\B.Brewster_Palandrome\B.Brewster_Palandrome\obj\Debug\netcoreapp2.1\B.Brewster_Palandrome.csproj.CoreCompileInputs.cache
+F:\B.Brewster_Palandrome\B.Brewster_Palandrome\obj\Debug\netcoreapp2.1\B.Brewster_Palandrome.AssemblyInfoInputs.cache
+F:\B.Brewster_Palandrome\B.Brewster_Palandrome\obj\Debug\netcoreapp2.1\B.Brewster_Palandrome.AssemblyInfo.cs
+F:\B.Brewster_Palandrome\B.Brewster_Palandrome\obj\Debug\netcoreapp2.1\B.Brewster_Palandrome.dll
+F:\B.Brewster_Palandrome\B.Brewster_Palandrome\obj\Debug\netcoreapp2.1\B.Brewster_Palandrome.pdb

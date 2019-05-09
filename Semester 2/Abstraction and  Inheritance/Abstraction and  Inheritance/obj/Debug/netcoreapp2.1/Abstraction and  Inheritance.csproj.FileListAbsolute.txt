@@ -1,0 +1,11 @@
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Abstraction and  Inheritance\Abstraction and  Inheritance\obj\Debug\netcoreapp2.1\Abstraction and  Inheritance.csprojAssemblyReference.cache
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Abstraction and  Inheritance\Abstraction and  Inheritance\obj\Debug\netcoreapp2.1\Abstraction and  Inheritance.csproj.CoreCompileInputs.cache
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Abstraction and  Inheritance\Abstraction and  Inheritance\obj\Debug\netcoreapp2.1\Abstraction and  Inheritance.AssemblyInfoInputs.cache
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Abstraction and  Inheritance\Abstraction and  Inheritance\obj\Debug\netcoreapp2.1\Abstraction and  Inheritance.AssemblyInfo.cs
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Abstraction and  Inheritance\Abstraction and  Inheritance\bin\Debug\netcoreapp2.1\Abstraction and  Inheritance.deps.json
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Abstraction and  Inheritance\Abstraction and  Inheritance\bin\Debug\netcoreapp2.1\Abstraction and  Inheritance.runtimeconfig.json
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Abstraction and  Inheritance\Abstraction and  Inheritance\bin\Debug\netcoreapp2.1\Abstraction and  Inheritance.runtimeconfig.dev.json
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Abstraction and  Inheritance\Abstraction and  Inheritance\bin\Debug\netcoreapp2.1\Abstraction and  Inheritance.dll
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Abstraction and  Inheritance\Abstraction and  Inheritance\bin\Debug\netcoreapp2.1\Abstraction and  Inheritance.pdb
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Abstraction and  Inheritance\Abstraction and  Inheritance\obj\Debug\netcoreapp2.1\Abstraction and  Inheritance.dll
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Abstraction and  Inheritance\Abstraction and  Inheritance\obj\Debug\netcoreapp2.1\Abstraction and  Inheritance.pdb

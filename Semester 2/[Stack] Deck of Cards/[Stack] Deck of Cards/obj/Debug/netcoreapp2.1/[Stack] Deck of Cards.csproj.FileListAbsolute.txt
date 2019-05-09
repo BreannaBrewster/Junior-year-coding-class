@@ -1,0 +1,11 @@
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\[Stack] Deck of Cards\[Stack] Deck of Cards\bin\Debug\netcoreapp2.1\[Stack] Deck of Cards.deps.json
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\[Stack] Deck of Cards\[Stack] Deck of Cards\bin\Debug\netcoreapp2.1\[Stack] Deck of Cards.runtimeconfig.json
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\[Stack] Deck of Cards\[Stack] Deck of Cards\bin\Debug\netcoreapp2.1\[Stack] Deck of Cards.runtimeconfig.dev.json
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\[Stack] Deck of Cards\[Stack] Deck of Cards\bin\Debug\netcoreapp2.1\[Stack] Deck of Cards.dll
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\[Stack] Deck of Cards\[Stack] Deck of Cards\bin\Debug\netcoreapp2.1\[Stack] Deck of Cards.pdb
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\[Stack] Deck of Cards\[Stack] Deck of Cards\obj\Debug\netcoreapp2.1\[Stack] Deck of Cards.csprojAssemblyReference.cache
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\[Stack] Deck of Cards\[Stack] Deck of Cards\obj\Debug\netcoreapp2.1\[Stack] Deck of Cards.csproj.CoreCompileInputs.cache
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\[Stack] Deck of Cards\[Stack] Deck of Cards\obj\Debug\netcoreapp2.1\[Stack] Deck of Cards.AssemblyInfoInputs.cache
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\[Stack] Deck of Cards\[Stack] Deck of Cards\obj\Debug\netcoreapp2.1\[Stack] Deck of Cards.AssemblyInfo.cs
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\[Stack] Deck of Cards\[Stack] Deck of Cards\obj\Debug\netcoreapp2.1\[Stack] Deck of Cards.dll
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\[Stack] Deck of Cards\[Stack] Deck of Cards\obj\Debug\netcoreapp2.1\[Stack] Deck of Cards.pdb

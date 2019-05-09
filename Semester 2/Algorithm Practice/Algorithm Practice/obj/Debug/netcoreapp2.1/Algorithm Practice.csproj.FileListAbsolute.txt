@@ -1,0 +1,11 @@
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Algorithm Practice\Algorithm Practice\obj\Debug\netcoreapp2.1\Algorithm Practice.csprojAssemblyReference.cache
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Algorithm Practice\Algorithm Practice\obj\Debug\netcoreapp2.1\Algorithm Practice.csproj.CoreCompileInputs.cache
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Algorithm Practice\Algorithm Practice\obj\Debug\netcoreapp2.1\Algorithm Practice.AssemblyInfoInputs.cache
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Algorithm Practice\Algorithm Practice\obj\Debug\netcoreapp2.1\Algorithm Practice.AssemblyInfo.cs
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Algorithm Practice\Algorithm Practice\bin\Debug\netcoreapp2.1\Algorithm Practice.deps.json
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Algorithm Practice\Algorithm Practice\bin\Debug\netcoreapp2.1\Algorithm Practice.runtimeconfig.json
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Algorithm Practice\Algorithm Practice\bin\Debug\netcoreapp2.1\Algorithm Practice.runtimeconfig.dev.json
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Algorithm Practice\Algorithm Practice\bin\Debug\netcoreapp2.1\Algorithm Practice.dll
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Algorithm Practice\Algorithm Practice\bin\Debug\netcoreapp2.1\Algorithm Practice.pdb
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Algorithm Practice\Algorithm Practice\obj\Debug\netcoreapp2.1\Algorithm Practice.dll
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Algorithm Practice\Algorithm Practice\obj\Debug\netcoreapp2.1\Algorithm Practice.pdb

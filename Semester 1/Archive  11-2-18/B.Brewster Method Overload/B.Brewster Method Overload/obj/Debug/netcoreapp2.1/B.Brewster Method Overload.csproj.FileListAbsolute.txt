@@ -1,0 +1,11 @@
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\B.Brewster Method Overload\B.Brewster Method Overload\obj\Debug\netcoreapp2.1\B.Brewster Method Overload.csprojAssemblyReference.cache
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\B.Brewster Method Overload\B.Brewster Method Overload\obj\Debug\netcoreapp2.1\B.Brewster Method Overload.csproj.CoreCompileInputs.cache
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\B.Brewster Method Overload\B.Brewster Method Overload\obj\Debug\netcoreapp2.1\B.Brewster Method Overload.AssemblyInfoInputs.cache
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\B.Brewster Method Overload\B.Brewster Method Overload\obj\Debug\netcoreapp2.1\B.Brewster Method Overload.AssemblyInfo.cs
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\B.Brewster Method Overload\B.Brewster Method Overload\bin\Debug\netcoreapp2.1\B.Brewster Method Overload.deps.json
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\B.Brewster Method Overload\B.Brewster Method Overload\bin\Debug\netcoreapp2.1\B.Brewster Method Overload.runtimeconfig.json
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\B.Brewster Method Overload\B.Brewster Method Overload\bin\Debug\netcoreapp2.1\B.Brewster Method Overload.runtimeconfig.dev.json
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\B.Brewster Method Overload\B.Brewster Method Overload\bin\Debug\netcoreapp2.1\B.Brewster Method Overload.dll
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\B.Brewster Method Overload\B.Brewster Method Overload\bin\Debug\netcoreapp2.1\B.Brewster Method Overload.pdb
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\B.Brewster Method Overload\B.Brewster Method Overload\obj\Debug\netcoreapp2.1\B.Brewster Method Overload.dll
+C:\Users\186741\Documents\Junior-year-coding-class\Archive  11-2-18\B.Brewster Method Overload\B.Brewster Method Overload\obj\Debug\netcoreapp2.1\B.Brewster Method Overload.pdb

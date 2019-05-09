@@ -1,0 +1,11 @@
+C:\Users\186741\OneDrive - Academy District 20\BBrewster_Water Gun\BBrewster_Water Gun\bin\Debug\netcoreapp2.1\BBrewster_Water Gun.deps.json
+C:\Users\186741\OneDrive - Academy District 20\BBrewster_Water Gun\BBrewster_Water Gun\bin\Debug\netcoreapp2.1\BBrewster_Water Gun.runtimeconfig.json
+C:\Users\186741\OneDrive - Academy District 20\BBrewster_Water Gun\BBrewster_Water Gun\bin\Debug\netcoreapp2.1\BBrewster_Water Gun.runtimeconfig.dev.json
+C:\Users\186741\OneDrive - Academy District 20\BBrewster_Water Gun\BBrewster_Water Gun\bin\Debug\netcoreapp2.1\BBrewster_Water Gun.dll
+C:\Users\186741\OneDrive - Academy District 20\BBrewster_Water Gun\BBrewster_Water Gun\bin\Debug\netcoreapp2.1\BBrewster_Water Gun.pdb
+C:\Users\186741\OneDrive - Academy District 20\BBrewster_Water Gun\BBrewster_Water Gun\obj\Debug\netcoreapp2.1\BBrewster_Water Gun.csprojAssemblyReference.cache
+C:\Users\186741\OneDrive - Academy District 20\BBrewster_Water Gun\BBrewster_Water Gun\obj\Debug\netcoreapp2.1\BBrewster_Water Gun.csproj.CoreCompileInputs.cache
+C:\Users\186741\OneDrive - Academy District 20\BBrewster_Water Gun\BBrewster_Water Gun\obj\Debug\netcoreapp2.1\BBrewster_Water Gun.AssemblyInfoInputs.cache
+C:\Users\186741\OneDrive - Academy District 20\BBrewster_Water Gun\BBrewster_Water Gun\obj\Debug\netcoreapp2.1\BBrewster_Water Gun.AssemblyInfo.cs
+C:\Users\186741\OneDrive - Academy District 20\BBrewster_Water Gun\BBrewster_Water Gun\obj\Debug\netcoreapp2.1\BBrewster_Water Gun.dll
+C:\Users\186741\OneDrive - Academy District 20\BBrewster_Water Gun\BBrewster_Water Gun\obj\Debug\netcoreapp2.1\BBrewster_Water Gun.pdb

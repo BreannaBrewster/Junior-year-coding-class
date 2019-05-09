@@ -1,0 +1,11 @@
+C:\Users\186741\source\repos\B.Brewster 2D array\B.Brewster 2D array\bin\Debug\netcoreapp2.1\B.Brewster 2D array.deps.json
+C:\Users\186741\source\repos\B.Brewster 2D array\B.Brewster 2D array\bin\Debug\netcoreapp2.1\B.Brewster 2D array.runtimeconfig.json
+C:\Users\186741\source\repos\B.Brewster 2D array\B.Brewster 2D array\bin\Debug\netcoreapp2.1\B.Brewster 2D array.runtimeconfig.dev.json
+C:\Users\186741\source\repos\B.Brewster 2D array\B.Brewster 2D array\bin\Debug\netcoreapp2.1\B.Brewster 2D array.dll
+C:\Users\186741\source\repos\B.Brewster 2D array\B.Brewster 2D array\bin\Debug\netcoreapp2.1\B.Brewster 2D array.pdb
+C:\Users\186741\source\repos\B.Brewster 2D array\B.Brewster 2D array\obj\Debug\netcoreapp2.1\B.Brewster 2D array.csprojAssemblyReference.cache
+C:\Users\186741\source\repos\B.Brewster 2D array\B.Brewster 2D array\obj\Debug\netcoreapp2.1\B.Brewster 2D array.csproj.CoreCompileInputs.cache
+C:\Users\186741\source\repos\B.Brewster 2D array\B.Brewster 2D array\obj\Debug\netcoreapp2.1\B.Brewster 2D array.AssemblyInfoInputs.cache
+C:\Users\186741\source\repos\B.Brewster 2D array\B.Brewster 2D array\obj\Debug\netcoreapp2.1\B.Brewster 2D array.AssemblyInfo.cs
+C:\Users\186741\source\repos\B.Brewster 2D array\B.Brewster 2D array\obj\Debug\netcoreapp2.1\B.Brewster 2D array.dll
+C:\Users\186741\source\repos\B.Brewster 2D array\B.Brewster 2D array\obj\Debug\netcoreapp2.1\B.Brewster 2D array.pdb

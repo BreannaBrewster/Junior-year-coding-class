@@ -1,0 +1,11 @@
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Queue\Queue\bin\Debug\netcoreapp2.1\Queue.deps.json
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Queue\Queue\bin\Debug\netcoreapp2.1\Queue.runtimeconfig.json
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Queue\Queue\bin\Debug\netcoreapp2.1\Queue.runtimeconfig.dev.json
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Queue\Queue\bin\Debug\netcoreapp2.1\Queue.dll
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Queue\Queue\bin\Debug\netcoreapp2.1\Queue.pdb
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Queue\Queue\obj\Debug\netcoreapp2.1\Queue.csprojAssemblyReference.cache
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Queue\Queue\obj\Debug\netcoreapp2.1\Queue.csproj.CoreCompileInputs.cache
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Queue\Queue\obj\Debug\netcoreapp2.1\Queue.AssemblyInfoInputs.cache
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Queue\Queue\obj\Debug\netcoreapp2.1\Queue.AssemblyInfo.cs
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Queue\Queue\obj\Debug\netcoreapp2.1\Queue.dll
+C:\Users\186741\Documents\Junior-year-coding-class\Semester 2\Queue\Queue\obj\Debug\netcoreapp2.1\Queue.pdb
