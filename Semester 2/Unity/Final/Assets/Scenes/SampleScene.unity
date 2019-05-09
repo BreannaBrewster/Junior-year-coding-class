@@ -360,6 +360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e043d9f2bf942a94fad54bf23bd9fe8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneLoad: 
 --- !u!1 &282840810
 GameObject:
   m_ObjectHideFlags: 0
@@ -793,6 +794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e043d9f2bf942a94fad54bf23bd9fe8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneLoad: 
 --- !u!65 &1098747301
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -957,6 +959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e043d9f2bf942a94fad54bf23bd9fe8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneLoad: Scene2
 --- !u!1 &1320378696
 GameObject:
   m_ObjectHideFlags: 0

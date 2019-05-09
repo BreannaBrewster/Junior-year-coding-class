@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ColPlayer : MonoBehaviour {
-
+    public string sceneLoad;
 	// Use this for initialization
 	void Start () {
 		
@@ -16,17 +16,17 @@ public class ColPlayer : MonoBehaviour {
 	}
     private void OnCollisionEnter(Collision col)
     {
-        if(col.gameObject.tag == "Player" && col.gameObject.name != "Restart Catch Block")
-        { 
+        if (col.gameObject.tag == "Player" && col.gameObject.name != "Restart Catch Block")
+        {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-        if(col.gameObject.tag == "Cover")
+        else if (col.gameObject.tag == "Cover")
         {
             Destroy(this.gameObject);
         }
-        if(col.gameObject.name == "Change Scene1")
+        else if(col.gameObject.name == "Change Scene1")
         {
-            SceneManager.LoadScene("Scene2");
+            SceneManager.LoadScene(sceneLoad);
         }
         if(col.gameObject.name == "Restart Catch Block")
         {
